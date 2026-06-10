@@ -1509,9 +1509,13 @@ nav li a:hover::after {
   html {
     font-size: 45%;
   }
+.main-heading{
 
+  font-size: 3rem;
+
+}
   .header-divider {
-    width: 60%;
+    width: 50%;
   }
 
   /* Wave Divider Fix */
@@ -1676,9 +1680,8 @@ nav li a::after {
   }
 
   /* education section */
-
 .education-section {
-    padding: 6rem 1.5rem;
+    padding: 6rem 4rem; 
   }
 
   .timeline-container {
@@ -1687,14 +1690,14 @@ nav li a::after {
   }
 
   .timeline-container::before {
-    left: 3.25rem;
-    top: 2rem;
-    bottom: 2rem;
+    left: 1.5rem;
+    top: 4.5rem;
+    bottom: 4.5rem;
   }
 
   .timeline-item {
-    margin-bottom: 4rem;
-    padding-left: 5.5rem;
+    margin-bottom: 6rem; 
+    padding-left: 6rem;  
   }
 
   .timeline-icon {
@@ -1706,7 +1709,7 @@ nav li a::after {
   }
 
   .timeline-content.glass-card {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.5rem; 
   }
 
   .timeline-title {
