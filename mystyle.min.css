@@ -1654,11 +1654,33 @@ nav li a:hover::after {
     font-size: 1.4rem;      
   }
 
-  /* =========================================
-     ABOUT SECTION WATERMARK HIDE
-  ========================================= */
-  .about-name, 
-  .about-role {
-    display: none; 
+  /* About */
+  .about-glass-container {
+    padding: 5rem 2rem 10rem;
+    width: 90%;
+    margin: 6rem auto;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
-}
+  .about-glass-container .main-heading {
+    font-size: 4rem;
+  }
+  .about p {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+  }
+  .about-name {
+    top: 50rem;
+    font-size: 4rem;
+    opacity: 1rem;
+    z-index: 2;
+  }
+  .about-role {
+    top: 60rem;
+    font-size: 3rem;
+    opacity: 1rem;
+    z-index: 2;
+  }
