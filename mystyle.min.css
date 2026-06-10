@@ -1523,75 +1523,70 @@ nav li a:hover::after {
   /* =========================================
      NAVBAR (MOBILE)
   ========================================= */
-  nav ul.nav-active {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-  .container-nav {
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    justify-content: space-between;
-    padding: 0rem 4rem 0rem;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 0.2rem;
-    top: 8.5rem;
-    margin-right: 0;
-    padding: 0;
-  }
-  nav ul {
-    display: none;
-    border-radius: 10px;
-    background-color: color-mix(in srgb, var(--body) 70%, transparent);
-    backdrop-filter: blur(20px);
-    padding: 0.1rem;
-    box-shadow: var(--b-shadow-black-color);
-  }
-  nav li a {
-    display: block;
-    padding: 1.5rem 3rem;
-    text-align: center;
-    font-size: 12px;
-  }
-  nav a:hover {
-    background-color: var(--font-color);
-    border-radius: 10px;
-  }
-  nav li a::after {
-    display: none;
-  }
-
-  #toggle_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 9999999;
-    width: 45px;
-    height: 45px;
-    font-size: 3rem;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    color: var(--font-color);
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
-  }
-  #toggle_button i,
-  #toggle_button span {
-    pointer-events: none;
-  }
-
-  /* =========================================
-     HERO SECTION (MOBILE FIX)
-  ========================================= */
-  .container-main {
+nav ul.nav-active {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.container-nav {
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0rem 4rem 0rem;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0.2rem;
+  top: 8.5rem;
+  margin-right: 0;
+  padding: 0;
+}
+nav ul {
+  display: none;
+  border-radius: 10px;
+  background-color: color-mix(in srgb, var(--body) 70%, transparent);
+  backdrop-filter: blur(20px);
+  padding: 0.1rem;
+  box-shadow: var(--b-shadow-black-color);
+}
+nav li a {
+  display: block;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  font-size: 12px;
+}
+nav a:hover {
+  background-color: var(--font-color);
+  border-radius: 10px;
+}
+nav li a::after {
+  display: none;
+}
+#toggle_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 9999999;
+  width: 45px;
+  height: 45px;
+  font-size: 3rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: var(--font-color);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+#toggle_button i,
+#toggle_button span {
+  pointer-events: none;
+}
+.container-main {
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
@@ -1599,93 +1594,83 @@ nav li a:hover::after {
   height: auto;
   min-height: 100vh;
   padding: 0rem 2rem 0rem 2rem; 
-  gap: 1rem; /* Gap thoda kam kiya taake image aur text control mein rahein */
+  gap: 1rem; 
 }
-
 .content-section {
   width: 100%;
   margin-top: 0;
   z-index: 10; 
 }
-
 .subheading {
   font-size: 2.2rem; 
   letter-spacing: 1px;
   margin-bottom: 1rem;
 }
-
 .heading {
   font-size: 3rem;
   margin-top: 0;
   line-height: 1;
 }
-
 .hero-img-container {
   width: 200px; 
   height: 200px;
-  margin-top: -5rem; /* 🔥 Yeh image ko upar ki taraf khinchega */
-  margin-bottom: 0.5rem; 
+  margin-top: 1rem; 
+  margin-bottom: 3rem; 
   margin-inline: auto;
 }
-
 .hero-img {
   width: 85%;
   height: auto;
 }
-
 .hero-btn-group {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; 
-  gap: 1.5rem;
-  margin-top: 6.5rem; /* 🔥 3rem se barha kar 6.5rem kar diya taake buttons kaafi neeche chale jayein */
+  gap: 1.8rem; 
+  margin-top: 5rem; 
   position: relative;
   z-index: 20; 
 }
-
-/* Mobile Buttons Size Optimization */
 .main-contact-btn,
 .secondary-btn {
-  padding: 1.2rem 2.2rem; 
+  padding: 1.53rem 2.6rem; 
   font-size: 1.3rem;      
 }
-
 .main-contact-btn i,
 .secondary-btn i {
   font-size: 1.4rem;      
 }
-/* About */
+
+
+ /* About */
   .about-glass-container {
-    padding: 3rem 1.5rem 4rem; /* Padding kam ki hai */
+    padding: 5rem 2rem 10rem;
     width: 90%;
-    margin: 3rem auto; /* Margin kam ki hai */
+    margin: 6rem auto;
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
   }
-
   .about-glass-container .main-heading {
-    font-size: 2.5rem; /* 4rem se kam kar ke 2.5rem kar diya */
+    font-size: 4rem;
   }
-
   .about p {
-    font-size: 1.1rem; /* 2rem mobile paragraph ke liye bohat bada hai, isko 1.1rem kiya hai */
-    line-height: 1.5;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    padding-top: 5px;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-top: 10px;
   }
-
   .about-name {
-    /* top: 50rem; (Agar yeh absolute position hai toh isko mobile ke liye change/remove karna parega warna design tootega) */
-    font-size: 1.5rem; /* 4rem se kam kiya hai */
-    opacity: 1; /* '1rem' invalid tha, usko '1' kar diya */
+    top: 48rem;
+    font-size: 3rem;
+    opacity: 1rem;
+    z-index: 2;
+  }
+  .about-role {
+    top: 60rem;
+    font-size: 2.5rem;
+    opacity: 1rem;
     z-index: 2;
   }
 
-  .about-role {
-    /* top: 60rem; (Same as above) */
-    font-size: 1.2rem; /* 3rem se kam kiya hai */
-    opacity: 1; 
-    z-index: 2;
-  }
 }
