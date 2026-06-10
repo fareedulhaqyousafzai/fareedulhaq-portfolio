@@ -1502,7 +1502,6 @@ nav li a:hover::after {
 .pulsing-btn:hover {
   animation: none;
 }
-
 @media (max-width: 800px) {
   html {
     font-size: 45%;
@@ -1583,14 +1582,14 @@ nav li a:hover::after {
     pointer-events: none;
   }
 
-  /* Hero */
+  /* Hero Section (Fixed Padding & Center Alignment) */
   .container-main {
     flex-direction: column-reverse;
-    justify-content: start;
+    justify-content: center;
     text-align: center;
     height: auto;
     min-height: 100vh;
-    padding: 25rem 2rem 10rem 2rem;
+    padding: 14rem 2rem 14rem 2rem; /* Padding 25rem se kam kar ke space balance ki taake text wave se upar rahay */
   }
   .content-section {
     width: 100%;
@@ -1603,12 +1602,30 @@ nav li a:hover::after {
     font-size: 3.5rem;
     letter-spacing: 2px;
   }
+  
+  /* Hero Buttons Centering (Fixed) */
+  .hero-btn-group {
+    display: flex;
+    justify-content: center; /* Buttons ko center mein alignment di */
+    flex-wrap: wrap;        /* Chhoti screen par buttons automatic wrap ho sakein */
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+  }
+  
   .hero-img-container {
     width: 220px;
     height: 220px;
     margin-bottom: 2rem;
+    margin-inline: auto; /* Image container ko center kiya */
   }
   .hero-img {
     width: 80%;
     height: auto;
-  }}
+  }
+
+  /* About Section Background Text Fix (Hiding overlap on mobile) */
+  .about-name, 
+  .about-role {
+    display: none; /* Mobile viewports par ye giant absolute watermarks layout kharab karte hain, isliye hide kiya */
+  }
+}
