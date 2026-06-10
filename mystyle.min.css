@@ -1592,7 +1592,7 @@ nav li a:hover::after {
     text-align: center;
     height: auto;
     min-height: 100vh;
-    padding: 15rem 2rem 10rem 2rem;
+    padding: 20rem 2rem 10rem 2rem;
   }
   .content-section {
     width: 100%;
@@ -1617,12 +1617,11 @@ nav li a:hover::after {
 
   .main-contact-btn {
 
-  font-size: 1rem;
-
 }
 
 .secondary-btn {
-  font-size: 1rem;
+  
+ 
 
 }
 
