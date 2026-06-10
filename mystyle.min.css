@@ -1502,6 +1502,7 @@ nav li a:hover::after {
 .pulsing-btn:hover {
   animation: none;
 }
+
 @media (max-width: 800px) {
   html {
     font-size: 45%;
