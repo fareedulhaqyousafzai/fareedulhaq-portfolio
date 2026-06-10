@@ -1592,11 +1592,10 @@ nav li a:hover::after {
     text-align: center;
     height: auto;
     min-height: 100vh;
-    padding: 25rem 2rem 10rem 2rem;
+    padding: 15rem 2rem 10rem 2rem;
   }
   .content-section {
     width: 100%;
-    margin-top: 1rem;
   }
   .heading {
     font-size: 5rem;
@@ -1614,6 +1613,19 @@ nav li a:hover::after {
     width: 80%;
     height: auto;
   }
+
+
+  .main-contact-btn {
+
+  font-size: 1rem;
+
+}
+
+.secondary-btn {
+  font-size: 1rem;
+
+}
+
 
   /* About */
   .about-glass-container {
