@@ -1653,34 +1653,38 @@ nav li a:hover::after {
   .secondary-btn i {
     font-size: 1.4rem;      
   }
-
-  /* About */
+/* About */
   .about-glass-container {
-    padding: 5rem 2rem 10rem;
+    padding: 3rem 1.5rem 4rem; /* Padding kam ki hai */
     width: 90%;
-    margin: 6rem auto;
+    margin: 3rem auto; /* Margin kam ki hai */
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(3px);
   }
+
   .about-glass-container .main-heading {
-    font-size: 4rem;
+    font-size: 2.5rem; /* 4rem se kam kar ke 2.5rem kar diya */
   }
+
   .about p {
-    font-size: 2rem;
-    line-height: 1.4;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    padding-top: 10px;
+    font-size: 1.1rem; /* 2rem mobile paragraph ke liye bohat bada hai, isko 1.1rem kiya hai */
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-top: 5px;
   }
+
   .about-name {
-    top: 50rem;
-    font-size: 4rem;
-    opacity: 1rem;
+    /* top: 50rem; (Agar yeh absolute position hai toh isko mobile ke liye change/remove karna parega warna design tootega) */
+    font-size: 1.5rem; /* 4rem se kam kiya hai */
+    opacity: 1; /* '1rem' invalid tha, usko '1' kar diya */
     z-index: 2;
   }
+
   .about-role {
-    top: 60rem;
-    font-size: 3rem;
-    opacity: 1rem;
+    /* top: 60rem; (Same as above) */
+    font-size: 1.2rem; /* 3rem se kam kiya hai */
+    opacity: 1; 
     z-index: 2;
   }
+}
