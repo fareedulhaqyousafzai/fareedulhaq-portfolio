@@ -1592,67 +1592,68 @@ nav li a:hover::after {
      HERO SECTION (MOBILE FIX)
   ========================================= */
   .container-main {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: auto;
-    min-height: 100vh;
-    padding: 0rem 2rem 0rem 2rem; 
-    gap: 2rem; 
-  }
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  min-height: 100vh;
+  padding: 0rem 2rem 0rem 2rem; 
+  gap: 1rem; /* Gap thoda kam kiya taake image aur text control mein rahein */
+}
 
-  .content-section {
-    width: 100%;
-    margin-top: 0;
-    z-index: 10; 
-  }
+.content-section {
+  width: 100%;
+  margin-top: 0;
+  z-index: 10; 
+}
 
-  .subheading {
-    font-size: 2.2rem; 
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-  }
+.subheading {
+  font-size: 2.2rem; 
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
 
-  .heading {
-    font-size: 3rem;
-    margin-top: 0;
-    line-height: 1;
-  }
+.heading {
+  font-size: 3rem;
+  margin-top: 0;
+  line-height: 1;
+}
 
-  .hero-img-container {
-    width: 200px; 
-    height: 200px;
-    margin-bottom: 1rem;
-    margin-inline: auto;
-  }
+.hero-img-container {
+  width: 200px; 
+  height: 200px;
+  margin-top: -5rem; /* 🔥 Yeh image ko upar ki taraf khinchega */
+  margin-bottom: 0.5rem; 
+  margin-inline: auto;
+}
 
-  .hero-img {
-    width: 85%;
-    height: auto;
-  }
+.hero-img {
+  width: 85%;
+  height: auto;
+}
 
-  .hero-btn-group {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-    gap: 1.5rem;
-    margin-top: 3rem; 
-    position: relative;
-    z-index: 20; 
-  }
+.hero-btn-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  gap: 1.5rem;
+  margin-top: 6.5rem; /* 🔥 3rem se barha kar 6.5rem kar diya taake buttons kaafi neeche chale jayein */
+  position: relative;
+  z-index: 20; 
+}
 
-  /* Mobile Buttons Size Optimization */
-  .main-contact-btn,
-  .secondary-btn {
-    padding: 1.2rem 2.2rem; 
-    font-size: 1.3rem;      
-  }
-  
-  .main-contact-btn i,
-  .secondary-btn i {
-    font-size: 1.4rem;      
-  }
+/* Mobile Buttons Size Optimization */
+.main-contact-btn,
+.secondary-btn {
+  padding: 1.2rem 2.2rem; 
+  font-size: 1.3rem;      
+}
+
+.main-contact-btn i,
+.secondary-btn i {
+  font-size: 1.4rem;      
+}
 /* About */
   .about-glass-container {
     padding: 3rem 1.5rem 4rem; /* Padding kam ki hai */
