@@ -1531,7 +1531,7 @@ nav ul.nav-active {
   gap: 0;
 }
 .container-nav {
-  width: 100%;
+  width: 90%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -1675,4 +1675,50 @@ nav li a::after {
     z-index: 2;
   }
 
+  /* education section */
+
+.education-section {
+    padding: 6rem 1.5rem;
+  }
+
+  .timeline-container {
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .timeline-container::before {
+    left: 3.25rem;
+    top: 2rem;
+    bottom: 2rem;
+  }
+
+  .timeline-item {
+    margin-bottom: 4rem;
+    padding-left: 5.5rem;
+  }
+
+  .timeline-icon {
+    left: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.8rem;
+    border-width: 3px;
+  }
+
+  .timeline-content.glass-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .timeline-title {
+    font-size: 1.4rem;
+  }
+
+  .timeline-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .timeline-text {
+    font-size: 1.05rem;
+  }
 }
