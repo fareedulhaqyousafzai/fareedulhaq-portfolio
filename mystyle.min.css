@@ -1681,7 +1681,7 @@ nav li a::after {
 
   /* education section */
 .education-section {
-    padding: 6rem 4rem; 
+    padding: 20rem 4rem; 
   }
 
   .timeline-container {
@@ -1713,7 +1713,7 @@ nav li a::after {
   }
 
   .timeline-title {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 
   .timeline-subtitle {
