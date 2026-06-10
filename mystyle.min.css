@@ -1503,6 +1503,8 @@ nav li a:hover::after {
   animation: none;
 }
 
+
+
 @media (max-width: 800px) {
   html {
     font-size: 45%;
@@ -1661,15 +1663,15 @@ nav li a:hover::after {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 5rem;
+  padding: 15rem;
 }
 .skill {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 25%;
-  height: 200px;
+  width: 20%;
+  height: 150px;
   margin: 2rem 0;
 }
 
@@ -1758,4 +1760,29 @@ nav li a:hover::after {
   .footer-section {
     padding-top: 5rem;
   }
+}
+
+/* CUSTOM SCROLLBAR */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--body); 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  border: 3px solid var(--body); /* Thora gap dene ke liye */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2db3f5; /* Hover pe thora bright blue */
+}
+
+/* Firefox ke liye */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-color) var(--body);
 }
