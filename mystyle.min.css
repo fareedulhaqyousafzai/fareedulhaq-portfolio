@@ -1507,17 +1507,22 @@ nav li a:hover::after {
   html {
     font-size: 45%;
   }
+
   .header-divider {
     width: 60%;
   }
+
+  /* Wave Divider Fix */
   .custom-shape-divider-bottom-1716734170 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 90px;
+    height: 60px; /* Wave choti kar di */
   }
 
-  /* Navbar */
+  /* =========================================
+     NAVBAR (MOBILE)
+  ========================================= */
   nav ul.nav-active {
     display: flex;
     flex-direction: column;
@@ -1583,50 +1588,77 @@ nav li a:hover::after {
     pointer-events: none;
   }
 
-  /* Hero Section (Fixed Padding & Center Alignment) */
+  /* =========================================
+     HERO SECTION (MOBILE FIX)
+  ========================================= */
   .container-main {
     flex-direction: column-reverse;
     justify-content: center;
+    align-items: center;
     text-align: center;
     height: auto;
     min-height: 100vh;
-    padding: 14rem 2rem 14rem 2rem; /* Padding 25rem se kam kar ke space balance ki taake text wave se upar rahay */
+    padding: 12rem 2rem 8rem 2rem; 
+    gap: 2rem; 
   }
+
   .content-section {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 0;
+    z-index: 10; 
   }
-  .heading {
-    font-size: 5rem;
-  }
+
   .subheading {
-    font-size: 3.5rem;
-    letter-spacing: 2px;
+    font-size: 2.2rem; 
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
   }
-  
-  /* Hero Buttons Centering (Fixed) */
-  .hero-btn-group {
-    display: flex;
-    justify-content: center; /* Buttons ko center mein alignment di */
-    flex-wrap: wrap;        /* Chhoti screen par buttons automatic wrap ho sakein */
-    gap: 1.5rem;
-    margin-top: 2.5rem;
+
+  .heading {
+    font-size: 3rem;
+    margin-top: 0;
+    line-height: 1;
   }
-  
+
   .hero-img-container {
-    width: 220px;
-    height: 220px;
-    margin-bottom: 2rem;
-    margin-inline: auto; /* Image container ko center kiya */
+    width: 200px; 
+    height: 200px;
+    margin-bottom: 1rem;
+    margin-inline: auto;
   }
+
   .hero-img {
-    width: 80%;
+    width: 85%;
     height: auto;
   }
 
-  /* About Section Background Text Fix (Hiding overlap on mobile) */
+  .hero-btn-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+    margin-top: 3rem; 
+    position: relative;
+    z-index: 20; 
+  }
+
+  /* Mobile Buttons Size Optimization */
+  .main-contact-btn,
+  .secondary-btn {
+    padding: 1.2rem 2.2rem; 
+    font-size: 1.3rem;      
+  }
+  
+  .main-contact-btn i,
+  .secondary-btn i {
+    font-size: 1.4rem;      
+  }
+
+  /* =========================================
+     ABOUT SECTION WATERMARK HIDE
+  ========================================= */
   .about-name, 
   .about-role {
-    display: none; /* Mobile viewports par ye giant absolute watermarks layout kharab karte hain, isliye hide kiya */
+    display: none; 
   }
 }
