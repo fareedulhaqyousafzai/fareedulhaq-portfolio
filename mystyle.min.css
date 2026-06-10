@@ -545,6 +545,7 @@ nav li a:hover::after {
   position: absolute;
   top: 40rem;
   opacity: 1rem;
+  filter: blur(1px);
   z-index: 2;
   margin-top: 2rem;
   color: var(--main-color);
@@ -565,6 +566,7 @@ nav li a:hover::after {
   position: absolute;
   top: 50rem;
   opacity: 1rem;
+  filter: blur(1px);
   line-height: 2;
   z-index: 2;
   color: var(--font-color);
@@ -1503,7 +1505,7 @@ nav li a:hover::after {
   animation: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   html {
     font-size: 45%;
   }
