@@ -1503,8 +1503,6 @@ nav li a:hover::after {
   animation: none;
 }
 
-
-
 @media (max-width: 800px) {
   html {
     font-size: 45%;
@@ -1526,7 +1524,7 @@ nav li a:hover::after {
     gap: 0;
   }
   .container-nav {
-    width: 90%;
+    width: 100%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -1596,6 +1594,7 @@ nav li a:hover::after {
   }
   .content-section {
     width: 100%;
+    margin-top: 1rem;
   }
   .heading {
     font-size: 5rem;
@@ -1612,176 +1611,4 @@ nav li a:hover::after {
   .hero-img {
     width: 80%;
     height: auto;
-  }
-
-  /* About */
-  .about-glass-container {
-    padding: 5rem 2rem 10rem;
-    width: 90%;
-    margin: 6rem auto;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-  }
-  .about-glass-container .main-heading {
-    font-size: 4rem;
-  }
-  .about p {
-    font-size: 2rem;
-    line-height: 1.4;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    padding-top: 10px;
-  }
-  .about-name {
-    top: 50rem;
-    font-size: 4rem;
-    opacity: 1rem;
-    z-index: 2;
-  }
-  .about-role {
-    top: 60rem;
-    font-size: 3rem;
-    opacity: 1rem;
-    z-index: 2;
-  }
-
-  /* Skills & Projects */
-  .skill {
-    width: 40%;
-  }
-  .skillset-section{
-    font-size: 1rem;
-  }
-
-.skillset-section {
-  width: 100%;
-  padding-top: 5rem;
-}
-.container-skillset {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 15rem;
-}
-.skill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 20%;
-  height: 150px;
-  margin: 2rem 0;
-}
-
-
-
-
-  
-  .projects-section {
-    width: 100%;
-    overflow-x: hidden;
-    
-  }
-  .projects-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    width: 90%;
-    padding-top: 5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    box-sizing: border-box;
-    gap:5rem;
-  }
-  .project-card,
-  .projects-grid:not(:hover) .project-card:nth-child(2) {
-    flex: none;
-    width: 100%;
-    max-width: 280px;
-    height: 280px;
-    margin: 0 auto;
-    transform: translateY(0);
-  }
-  .project-card:hover {
-    flex: none;
-    transform: translateY(-8px);
-    box-shadow: 0 25px 50px rgba(0, 180, 255, 0.25);
-  }
-  .project-browser {
-    height: 30px;
-    padding-left: 12px;
-  }
-  .dot {
-    width: 10px;
-    height: 10px;
-    margin-right: 6px;
-  }
-  .browser-title {
-    font-size: 1.1rem;
-    margin-right: 40px;
-  }
-  .project-overlay {
-    padding: 1.5rem 1rem;
-  }
-  .project-overlay h3 {
-    font-size: 1.8rem;
-    margin-bottom: 5px;
-  }
-  .project-overlay p {
-    font-size: 0.95rem;
-    margin-bottom: 20px;
-  }
-  .project-tags {
-    gap: 8px;
-    margin-bottom: 20px;
-  }
-  .project-tags span {
-    font-size: 1rem;
-    padding: 5px 12px;
-  }
-  .project-actions {
-    gap: 15px;
-  }
-  .project-actions a {
-    font-size: 1rem;
-    padding: 8px 18px;
-    border-radius: 8px;
-    gap: 8px;
-  }
-
-  /* Contact & Footer */
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-  .footer-section {
-    padding-top: 5rem;
-  }
-}
-
-/* CUSTOM SCROLLBAR */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--body); 
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
-  border-radius: 10px;
-  border: 3px solid var(--body); /* Thora gap dene ke liye */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #2db3f5; /* Hover pe thora bright blue */
-}
-
-/* Firefox ke liye */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--main-color) var(--body);
-}
+  }}
