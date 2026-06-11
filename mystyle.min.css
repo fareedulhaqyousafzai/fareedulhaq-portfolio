@@ -1728,16 +1728,17 @@ nav li a::after {
 /* skill */
 
 .skillset-section {
-    padding-top: 3rem; /* Top padding kam kar di */
+    padding-top: 3rem; 
   }
 
   .container-skillset {
-    padding: 2rem 1rem; /* 🔥 Mobile par side padding 5rem se hata kar 1rem kar di taake space mile */
-    gap: 2rem 1rem;     /* 🔥 Margin ki jagah gap use kiya (2rem upar-neeche, 1rem left-right) */
+    padding: 2rem 1rem;  
+    gap: 2rem 1rem;       
   }
 
   .skill {
-    width: 30%;         /* 🔥 Ek line mein 3 icons perfectly fit aayenge */
-    height: 130px;      /* 🔥 Height 200px se kam kar ke 130px ki taake lamba faasla na rahay */
-    margin: 0;          /* Margin 0 kar diya kyunki ab 'gap' property handle kar rahi hai */
-  }}
+    width: 40%;            
+    margin: 0;          
+  }
+
+}
