@@ -2035,10 +2035,30 @@ nav li a:hover::after {
   }
 
   .project-actions a {
-    font-size: 0.6rem;
-    padding: 8px 10px;
+    padding: 1.53rem 2.6rem;
+    font-size: 1.3rem;
     width: auto;
     white-space: nowrap;
+  }
+ .hero-btn-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin-top: 5rem;
+    position: relative;
+    z-index: 20;
+  }
+
+  .main-contact-btn,
+  .secondary-btn {
+    padding: 1.53rem 2.6rem;
+    font-size: 1.3rem;
+  }
+
+  .main-contact-btn i,
+  .secondary-btn i {
+    font-size: 1.4rem;
   }
 
 
