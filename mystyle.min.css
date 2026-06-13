@@ -2049,7 +2049,7 @@ nav li a:hover::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 3rem;
   }
 
   .contact-card {
