@@ -2042,14 +2042,14 @@ nav li a:hover::after {
     border-radius: 5px;
   }
   .contact-section {
-    padding: 6rem 5%;
+    padding: 10rem 5%;
   }
 
   .contact-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem;
+    gap: 5rem;
   }
 
   .contact-card {
