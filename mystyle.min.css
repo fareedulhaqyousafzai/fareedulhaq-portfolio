@@ -1885,19 +1885,20 @@ nav li a:hover::after {
   }
 
   .timeline-container {
+    padding-top: 2rem;
     padding-left: 1rem;
     margin-bottom: 3rem;
   }
 
   .timeline-container::before {
     left: 1.5rem;
-    top: 4.5rem;
-    bottom: 4.5rem;
+    top: 6rem;
+    bottom: 6rem;
   }
 
   .timeline-item {
-    margin-bottom: 6rem;
-    padding-left: 6rem;
+    margin-bottom: 7rem;
+    padding-left: 7rem;
   }
 
   .timeline-icon {
@@ -2001,7 +2002,7 @@ nav li a:hover::after {
 
   .project-overlay h3 {
     font-size: 1.2rem;
-    margin-bottom: 0.5px;
+    margin-bottom: 0.5rem;
   }
 
   .project-overlay p {
@@ -2034,8 +2035,8 @@ nav li a:hover::after {
   }
 
   .project-actions a {
-    font-size: 0.6rem;
-    padding: 8px 12px;
+    font-size: 0.7rem;
+    padding: 10px 12px;
     width: auto;
     white-space: nowrap;
   }
