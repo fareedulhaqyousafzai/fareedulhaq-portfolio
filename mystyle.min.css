@@ -2035,7 +2035,7 @@ nav li a:hover::after {
   }
 
   .project-actions a {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     padding: 10px 12px;
     width: auto;
     white-space: nowrap;
