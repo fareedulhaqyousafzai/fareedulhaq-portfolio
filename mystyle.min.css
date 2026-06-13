@@ -2076,40 +2076,39 @@ nav li a:hover::after {
     word-wrap: break-word;
   }
 
-
-  
-
-  .footer-section {
-    padding: 3rem 5% 1.5rem 5%;
+.footer-section {
+    padding: 4rem 5% 2rem 5%; /* 🔥 Padding wapas thodi barha di taake daba hua na lage */
     margin-top: 4rem; 
   }
 
   .footer-content {
-    gap: 8px; 
+    gap: 15px; /* 🔥 Lines ke darmiyan fasla barha diya taake clear lage */
   }
 
   .footer-para {
-    font-size: 1.1rem; 
+    font-size: 1.3rem; /* 🔥 Text ko thoda bada aur readable kar diya */
   }
 
   .footer-logo {
-    font-size: 1.2em;
+    font-size: 1.4em; /* 🔥 Logo ko prominent kiya */
   }
 
   .footer-logo .logo-dot {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   .footer-built {
-    font-size: 1rem;
+    font-size: 1.15rem; /* 🔥 Copyright text ko bhi halka sa bada kiya */
   }
 
- 
   .scroll-top {
-    width: 40px;
-    height: 40px;
-    font-size: 1.4rem;
-    top: -20px; 
+    width: 45px; /* 🔥 Button ko wapas standard size pe laya */
+    height: 45px;
+    font-size: 1.5rem;
+    top: -22px; 
     border-width: 3px;
   }
+
+
+
 }
