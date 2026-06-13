@@ -2039,10 +2039,6 @@ nav li a:hover::after {
     font-size: 0.8rem;
     width: auto;
     white-space: nowrap;
+    border-radius: 5px;
   }
-
-
- 
-
-
 }
