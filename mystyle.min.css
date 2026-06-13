@@ -1928,7 +1928,8 @@ nav li a:hover::after {
   /* skill */
   .container-skillset {
     margin: 0 auto;
-    padding: 1rem;
+   
+    padding-top: 2rem;
     gap: 10rem 1rem;
     
   }
@@ -1946,6 +1947,9 @@ nav li a:hover::after {
 
 
   /* project */
+.header-divider {
+    margin-bottom:  2rem ;
+}
 
   .browser-title {
  font-size: 8px;
@@ -1971,7 +1975,6 @@ nav li a:hover::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
     padding: 2rem 1rem;
   }
 
@@ -1979,9 +1982,9 @@ nav li a:hover::after {
   .project-card:hover,
   .project-card:active,
   .projects-grid:not(:hover) .project-card:nth-child(2) {
-    width: 90%;
+    width: 95%;
     max-width: 250px;
-    height: 250px;
+    height: 200px;
     max-height: 250px;
     margin: 0 auto;
     flex: none;
@@ -1997,8 +2000,8 @@ nav li a:hover::after {
   }
 
   .project-overlay h3 {
-    font-size: 1.6rem;
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    margin-bottom: px;
   }
 
   .project-overlay p {
