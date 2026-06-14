@@ -1257,7 +1257,9 @@ nav li a:hover::after {
 .project-card:hover .card-glow {
   opacity: 1;
 }
-
+.slider-btn{
+  display: none;
+}
 /* =========================================
    CONTACT SECTION
 ========================================= */
@@ -1949,151 +1951,214 @@ nav li a:hover::after {
 
   
   
- 
-  .header-divider {
-    margin: 1rem auto 1rem auto; 
-  }
+ /* =========================================
+   PROJECTS SECTION (CLEAN & VIP LUXURY)
+========================================= */
 
-  .projects-section {
-   margin-top: 10rem;
-  }
-
-  .slider-wrapper {
-    margin-top: 0;
-    padding-left:1rem ;
-    padding-right: 1rem;
-    padding-top: 3.5rem;
-    position: relative;
-  }
-
-
-  .browser-title {
-    font-size: 8px;
-  }
-
-  .project-browser {
-    height: 3rem; 
-  }
-
-  .dot {
-    width: 7px;
-    height: 7px;
-  }
-
-  /* 🔥 Slider Track (Grid) */
-  .projects-grid {
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    align-items: center;
-    padding: 0; 
-    scrollbar-width: none; 
-  }
-
-  .projects-grid::-webkit-scrollbar {
-    display: none; 
-  }
-
-
-  .project-card,
-  .project-card:hover,
-  .project-card:active,
-  .projects-grid:not(:hover) .project-card:nth-child(2) {
-    width: 85%; 
-    height: 250px; 
-    max-height: none; 
-    margin: 0 7.5%; 
-    flex: 0 0 85%; 
-    scroll-snap-align: center; 
-    overflow: hidden;
-  }
-  .project-card:hover {
-
-  box-shadow: none;
+.header-divider {
+  margin: 1rem auto; 
 }
 
- 
-  .project-overlay {
-    padding: 1.5rem 1rem 1rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; 
-    height: 100%;
-  }
+.projects-section {
+  margin-top: 10rem;
+}
 
-  .project-overlay h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-  }
+.slider-wrapper {
+  margin-top: 0;
+  padding: 3.5rem 2rem 0 2rem; 
+  position: relative;
+}
 
-  .project-overlay p {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
+.browser-title {
+  font-size: 8px;
+}
 
-  .project-tags {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 3px;
-  }
+.project-browser {
+  height: 3rem; 
+}
 
-  .project-tags span {
-    font-size: 0.7rem;
-    padding: 3px 6px;
-  }
+.dot {
+  width: 7px;
+  height: 7px;
+}
 
-  .project-actions {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    width: 100%;
-    margin-top: 0.5rem;
-    padding-bottom: 1.5rem;
-  }
+/* 🔥 Slider Track (Grid) */
+.projects-grid {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  align-items: center;
+  padding: 0; 
+  scrollbar-width: none; 
+}
 
-  .project-actions a {
-    padding: 0.8rem 1.8rem;
-    font-size: 0.8rem;
-    width: auto;
-    white-space: nowrap;
-    border-radius: 5px;
-  }
+.projects-grid::-webkit-scrollbar {
+  display: none; 
+}
 
- 
-  .slider-btn {
-    width: 40px; 
-    height: 40px;
-    border-radius: 50%;
-    background: var(--main-color);
-    border: 4px solid var(--body);
-    color: var(--font-color);
-    font-size: 1.4rem; 
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    box-shadow: var(--b-shadow-black-color);
-    z-index: 1000;
-    transition: all 0.3s ease;
-  }
+/* 🔥 VIP Single View Card (Merged Duplicates) */
+.project-card,
+.project-card:hover,
+.project-card:active,
+.projects-grid:not(:hover) .project-card:nth-child(2) {
+  width: 85%; 
+  height: 220px; 
+  max-height: none; 
+  margin: 0 7.5%; 
+  flex: 0 0 85%; 
+  scroll-snap-align: center; 
+  overflow: hidden;
+  border-radius: 16px; 
+  border: 1px solid rgba(255, 255, 255, 0.08); 
+  box-shadow: none; 
+  transition: all 0.4s ease;
+}
 
-  .left-btn { left: 2px; } 
-  .right-btn { right: 2px; } 
+/* 🔥 Gradient Overlay & Text */
+.project-overlay {
+  padding: 1.5rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  height: 100%;
+  border-radius: 0 0 16px 16px;
+}
 
-  .slider-btn:hover {
-    background: #ffffff;
-    color: var(--main-color);
-  }
+.project-overlay h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
 
-  .slider-btn:active {
-    transform: translateY(-50%) scale(0.9);
-  }
+.project-overlay p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.project-tags span {
+  font-size: 0.7rem;
+  padding: 3px 6px;
+}
+
+.project-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.project-actions a {
+  padding: 0.8rem 1.8rem;
+  font-size: 0.8rem;
+  width: auto;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+/* 🔥 Solid Premium Buttons */
+.slider-btn {
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border-radius: 50%;
+  background: var(--main-color);
+  border: 4px solid var(--body);
+  color: #ffffff;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.left-btn { left: 0px; }
+.right-btn { right: 0px; }
+
+.slider-btn:hover {
+  background: #ffffff;
+  color: var(--main-color);
+  box-shadow: 0 0 20px var(--main-color);
+}
+
+.slider-btn:active {
+  transform: translateY(-50%) scale(0.9);
+}
+
+/* =========================================
+   SLIDER PAGINATION (ULTRA-PREMIUM DASHES)
+========================================= */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Lines ke darmiyan spacing */
+  margin-top: 2.5rem; 
+  /* 🔥 Koi daba (background) nahi, bilkul clean look */
+}
+
+/* 🔥 Inactive Dots (Ab yeh choti lines ban gaye hain) */
+.slider-dot {
+  width: 18px; 
+  height: 4px; /* Bilkul patli aur sleek line */
+  border-radius: 10px;
+  background:var(--font-color);
+  cursor: pointer;
+  border: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+  position: relative;
+  overflow: hidden; /* Swipe animation ke liye zaroori */
+}
+
+/* Hover effect: Line thodi roshan hogi */
+.slider-dot:hover {
+  background: rgba(255, 255, 255, 0.4);
+  height: 6px; /* Hover pe thodi moti hogi */
+}
+
+/* 🌟 ACTIVE DOT (Lamba Dash with Wow Factor) */
+.slider-dot.active {
+  width: 45px; /* 🔥 Active hone pe lamba dash ban jayega */
+  background: var(--main-color);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--main-color) 40%, transparent);
+}
+
+/* 🌟 WOW FACTOR: Active line ke andar ek chamakti hui light swipe karegi */
+.slider-dot.active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Animation jo light ko left se right move karegi */
+@keyframes shineSwipe {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+
+
 
   .contact-card {
     width: 130px;  
