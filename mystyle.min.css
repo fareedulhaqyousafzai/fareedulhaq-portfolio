@@ -1946,57 +1946,62 @@ nav li a:hover::after {
 
 
 
-
-  /* project */
-.header-divider {
-    margin-bottom:  2rem ;
-}
+/* =========================================
+     PROJECTS SLIDER (MOBILE FINAL FIX)
+  ========================================= */
+  .header-divider {
+    margin-bottom: 2rem;
+  }
 
   .browser-title {
- font-size: 8px;
-}
+    font-size: 8px;
+  }
 
-.project-browser {
-  height: 3rem; }
+  .project-browser {
+    height: 3rem; 
+  }
 
   .dot {
-  width: 7px;
-  height: 7px;
- 
-}
-  .project-overlay {
-    padding: 1.5rem 1.5rem 0rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    width: 7px;
+    height: 7px;
   }
 
+  /* 🔥 Slider Container */
   .projects-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 2rem 0; /* Margin handle karega baqi space */
+    scrollbar-width: none; /* Hide scrollbar Firefox */
   }
 
+  .projects-grid::-webkit-scrollbar {
+    display: none; /* Hide scrollbar Chrome/Safari */
+  }
+
+  /* 🔥 Single View Card setup */
   .project-card,
   .project-card:hover,
   .project-card:active,
   .projects-grid:not(:hover) .project-card:nth-child(2) {
-    width: 95%;
-    max-width: 250px;
-    height: 220px;
-    max-height: 250px;
-    margin: 0 auto;
-    flex: none;
+    width: 85%; 
+    height: 300px;
+    max-height: 300px;
+    margin: 0 7.5%; /* Card ko exact center karta hai aur agle card ko bahar fenkta hai */
+    flex: 0 0 85%; /* Dabne (squish) hone se rokta hai */
+    scroll-snap-align: center; 
     overflow: hidden;
   }
 
+  /* Card Inner Details */
   .project-overlay {
-    padding: 18rem 1.5rem 0rem 1.5rem;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end; 
     height: 100%;
   }
 
@@ -2030,7 +2035,7 @@ nav li a:hover::after {
     justify-content: center;
     gap: 10px;
     width: 100%;
-    margin-top:0.5rem;
+    margin-top: 0.5rem;
     padding-bottom: 2rem;
   }
 
@@ -2041,6 +2046,33 @@ nav li a:hover::after {
     white-space: nowrap;
     border-radius: 5px;
   }
+
+  /* Slider Action Buttons */
+  .slider-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--main-color);
+    backdrop-filter: blur(8px);
+    border: none;
+    color: var(--font-color);
+    font-size: 1.8rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    box-shadow: var(--b-shadow-black-color);
+    z-index: 1000;
+  }
+
+  .left-btn { left: 10px; }
+  .right-btn { right: 10px; }
+  
+  .slider-btn:active {
+    transform: translateY(-50%) scale(0.9);
+  }
+  
+  
   .contact-section {
     padding: 10rem 5%;
   }
@@ -2051,6 +2083,8 @@ nav li a:hover::after {
     justify-content: center;
     gap: 5rem;
   }
+
+
 
   .contact-card {
     width: 130px;  
