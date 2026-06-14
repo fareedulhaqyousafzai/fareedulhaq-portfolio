@@ -1885,20 +1885,20 @@ nav li a:hover::after {
   }
 
   .timeline-container {
-    padding-top: 2rem;
+    padding-top: 3.5rem;
     padding-left: 1rem;
     margin-bottom: 3rem;
   }
 
   .timeline-container::before {
     left: 1.5rem;
-    top: 6rem;
-    bottom: 6rem;
+    top: 7rem;
+    bottom: 7rem;
   }
 
   .timeline-item {
-    margin-bottom: 7rem;
-    padding-left: 7rem;
+    margin-bottom: 5rem;
+    padding-left: 5.5rem;
   }
 
   .timeline-icon {
@@ -1929,7 +1929,6 @@ nav li a:hover::after {
   /* skill */
   .container-skillset {
     margin: 0 auto;
-   
     padding-top: 2rem;
     gap: 10rem 1rem;
     
@@ -1938,20 +1937,35 @@ nav li a:hover::after {
   .skill {
     width: 45%;
     height: 7.5rem;
-    margin: 0;
+    margin: 3.5;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+.skillset-section{
+  padding-top: 15rem;
+}
 
 
-
-/* =========================================
-     PROJECTS SLIDER (MOBILE FINAL FIX)
-  ========================================= */
+  
+  
+ 
   .header-divider {
-    margin-bottom: 2rem;
+    margin: 1rem auto 1rem auto; 
   }
+
+  .projects-section {
+   margin-top: 10rem;
+  }
+
+  .slider-wrapper {
+    margin-top: 0;
+    padding-left:1rem ;
+    padding-right: 1rem;
+    padding-top: 3.5rem;
+    position: relative;
+  }
+
 
   .browser-title {
     font-size: 8px;
@@ -1966,7 +1980,7 @@ nav li a:hover::after {
     height: 7px;
   }
 
-  /* 🔥 Slider Container */
+  /* 🔥 Slider Track (Grid) */
   .projects-grid {
     display: flex;
     flex-direction: row; 
@@ -1974,31 +1988,35 @@ nav li a:hover::after {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     align-items: center;
-    padding: 2rem 0; /* Margin handle karega baqi space */
-    scrollbar-width: none; /* Hide scrollbar Firefox */
+    padding: 0; 
+    scrollbar-width: none; 
   }
 
   .projects-grid::-webkit-scrollbar {
-    display: none; /* Hide scrollbar Chrome/Safari */
+    display: none; 
   }
 
-  /* 🔥 Single View Card setup */
+
   .project-card,
   .project-card:hover,
   .project-card:active,
   .projects-grid:not(:hover) .project-card:nth-child(2) {
     width: 85%; 
-    height: 300px;
-    max-height: 300px;
-    margin: 0 7.5%; /* Card ko exact center karta hai aur agle card ko bahar fenkta hai */
-    flex: 0 0 85%; /* Dabne (squish) hone se rokta hai */
+    height: 250px; 
+    max-height: none; 
+    margin: 0 7.5%; 
+    flex: 0 0 85%; 
     scroll-snap-align: center; 
     overflow: hidden;
   }
+  .project-card:hover {
 
-  /* Card Inner Details */
+  box-shadow: none;
+}
+
+ 
   .project-overlay {
-    padding: 1.5rem 1.5rem 0rem 1.5rem;
+    padding: 1.5rem 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
@@ -2036,7 +2054,7 @@ nav li a:hover::after {
     gap: 10px;
     width: 100%;
     margin-top: 0.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
   }
 
   .project-actions a {
@@ -2047,44 +2065,35 @@ nav li a:hover::after {
     border-radius: 5px;
   }
 
-  /* Slider Action Buttons */
+ 
   .slider-btn {
-    width: 45px;
-    height: 45px;
+    width: 40px; 
+    height: 40px;
     border-radius: 50%;
     background: var(--main-color);
-    backdrop-filter: blur(8px);
-    border: none;
+    border: 4px solid var(--body);
     color: var(--font-color);
-    font-size: 1.8rem;
+    font-size: 1.4rem; 
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
     box-shadow: var(--b-shadow-black-color);
     z-index: 1000;
+    transition: all 0.3s ease;
   }
 
-  .left-btn { left: 10px; }
-  .right-btn { right: 10px; }
-  
+  .left-btn { left: 2px; } 
+  .right-btn { right: 2px; } 
+
+  .slider-btn:hover {
+    background: #ffffff;
+    color: var(--main-color);
+  }
+
   .slider-btn:active {
     transform: translateY(-50%) scale(0.9);
   }
-  
-  
-  .contact-section {
-    padding: 10rem 5%;
-  }
-
-  .contact-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5rem;
-  }
-
-
 
   .contact-card {
     width: 130px;  
@@ -2109,6 +2118,20 @@ nav li a:hover::after {
     text-align: center;
     word-wrap: break-word;
   }
+
+   .contact-section {
+    padding: 10rem 5%;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+            padding-top: 3.5rem;
+  }
+
+
 
 .footer-section {
     padding: 4rem 5% 2rem 5%; /* 🔥 Padding wapas thodi barha di taake daba hua na lage */
@@ -2142,7 +2165,35 @@ nav li a:hover::after {
     top: -22px; 
     border-width: 3px;
   }
+/* =========================================
+     PREMIUM LOADER (MOBILE SCALING)
+  ========================================= */
+  .l-logo {
+    font-size: 3rem; /* Text ko mobile ke hisaab se perfect kiya */
+  }
 
+  .l-bar-wrap {
+    width: 150px; /* Loading bar ki width thodi kam ki */
+  }
+
+  .l-dots {
+    gap: 8px; /* Dots ko thoda qareeb kiya */
+  }
+
+  /* 🔥 Rings ko chota kiya taake mobile screen se bahar na niklen */
+  .ring:nth-child(1) {
+    width: 140px;
+    height: 140px;
+    margin-top: -70px;
+    margin-left: -70px;
+  }
+
+  .ring:nth-child(2) {
+    width: 220px;
+    height: 220px;
+    margin-top: -110px;
+    margin-left: -110px;
+  }
 
 
 }
