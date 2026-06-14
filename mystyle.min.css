@@ -2068,16 +2068,20 @@ nav li a:hover::after {
   border-radius: 5px;
 }
 
-/* 🔥 Solid Premium Buttons */
+
+/* =========================================
+   ULTRA-MINIMAL NAKED ARROWS
+========================================= */
 .slider-btn {
-  width: 46px;
-  height: 46px;
-  padding: 0;
-  border-radius: 50%;
-  background: var(--main-color);
-  border: 4px solid var(--body);
-  color: #ffffff;
-  font-size: 1.2rem;
+  width: 80px;
+  height: 80px;
+  background: transparent; /* 🔥 Gol background bilkul khatam */
+  border: none;
+  
+  /* 🔥 Sirf arrow ka color, halka sa transparent taake background se mix na ho */
+  color: var(--main-color); 
+  font-size: 4rem; /* 🔥 Arrow ka size kafi bada kar diya */
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2085,22 +2089,29 @@ nav li a:hover::after {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.5);
+  box-shadow: none; /* 🔥 Shadow bilkul khatam */
   z-index: 1000;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.left-btn { left: 0px; }
-.right-btn { right: 0px; }
+.left-btn { left: -10px; } /* Thoda peechay kiya taake card se door rahe */
+.right-btn { right: -10px; } 
 
+/* 🔥 Hover Effect: Arrow roshan hoga aur thoda agay ko push karega */
 .slider-btn:hover {
-  background: #ffffff;
-  color: var(--main-color);
-  box-shadow: 0 0 20px var(--main-color);
+  background: transparent;
+  color: var(--font-color); /* Hover pe tumhara VIP blue color aajayega */
+  transform: translateY(-50%) scale(1.2); /* Halka sa zoom in */
 }
 
-.slider-btn:active {
-  transform: translateY(-50%) scale(0.9);
+/* Left arrow hover pe thoda piche jayega */
+.left-btn:hover {
+  transform: translateY(-50%) scale(1.2) translateX(-3px);
+}
+
+/* Right arrow hover pe thoda aage jayega */
+.right-btn:hover {
+  transform: translateY(-50%) scale(1.2) translateX(3px);
 }
 
 /* =========================================
