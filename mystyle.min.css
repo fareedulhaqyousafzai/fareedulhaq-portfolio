@@ -2212,51 +2212,63 @@ color: var(--main-color) ;
     margin-bottom: 0.5rem;
   }
 
-
-  /* ========================================= */
-  /* EDUCATION SECTION FIX (Landscape)         */
+/* ========================================= */
+  /* EDUCATION SECTION FIX (Landscape Perfected)*/
   /* ========================================= */
 
   .education-section {
-    padding: 4rem 2rem 2rem 2rem; /* 20rem se kam kar ke 4rem kar diya taake screen par fit aaye */
+    padding: 6rem 2rem 2rem 2rem; 
   }
 
+  /* 🔥 Heading ke baad ka massive gap khatam kiya 🔥 */
+  .education-section .header-divider {
+    margin: 1rem auto 2.5rem auto; /* Bottom margin tight kar diya */
+    width: 15rem; /* About section wale divider ki width match ki */
+  }
+
+  /* Container ko center kiya aur left se safe space di */
   .timeline-container {
-    padding-top: 1rem;
-    margin-bottom: 1rem;
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto; /* Horizontally center */
+    padding-top: 0;
+    padding-left: 3rem; /* Left edge se door kiya taake icon cut na ho */
   }
 
-  /* Vertical line ko chote layout ke hisaab se adjust kiya */
+  /* Vertical line ko icons ke theek center me align kiya */
   .timeline-container::before {
-    top: 1.5rem; 
-    bottom: 1.5rem;
-    left: 1.5rem;
+    top: 0;
+    bottom: 0;
+    left: 4.6rem; /* Icon ke size aur padding ke hisaab se perfect center */
   }
 
   .timeline-item {
-    margin-bottom: 2.5rem; /* Cards ke darmyan ka gap tight kar diya */
-    padding-left: 5.5rem;
+    margin-bottom: 2rem; /* Cards ke darmiyan gap kam kiya */
+    padding-left: 4.5rem; /* Icon aur text box ke darmiyan space */
   }
 
+  /* Icons ki styling aur placement */
   .timeline-icon {
-    width: 4rem; /* Icon thora chota kiya taake space bache */
-    height: 4rem;
-    font-size: 1.5rem;
-    left: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    left: 0; 
   }
 
+  /* Glass cards ko thora aur sleek banaya */
   .timeline-content.glass-card {
-    padding: 1.5rem; /* Card ke andar ki spacing compact ki hai */
+    padding: 1.5rem 2rem;
   }
 
+  /* Text ko card ke andar well-proportioned kiya */
   .timeline-title {
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.4rem;
   }
 
   .timeline-subtitle {
     font-size: 1.1rem;
-    margin-bottom: 0.5rem; /* Heading aur text ke darmiyan gap kam kiya */
+    margin-bottom: 0.4rem;
   }
 
   .timeline-text {
