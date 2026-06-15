@@ -2160,39 +2160,49 @@ color: var(--main-color) ;
     height: 40px; /* Wave ki height kam ki taake screen gher na le */
   }
 
-.about-section {
-    padding: 6rem 2rem 4rem 2rem; /* Vertical padding drastically reduced */
+  /* ========================================= */
+  /* ABOUT SECTION FIX (Landscape Perfected)   */
+  /* ========================================= */
+
+  .about-section {
+    padding: 6rem 2rem 2rem 2rem; /* Bottom padding mazeed kam ki hai */
+    min-height: auto;
   }
 
-  /* Background Floating Text Adjustment */
+  /* Background Floating Text */
   .about-name {
-    top: 8rem; /* Screen ke top ke qareeb laya gaya */
-    font-size: 7vw; /* Viewport width ke hisaab se scale hoga */
+    top: 5rem; 
+    font-size: 8vw; 
   }
 
   .about-role {
-    top: 14rem; /* Name ke foran baad align kiya gaya */
-    font-size: 4vw;
+    top: 10rem; 
+    font-size: 5vw;
   }
 
   /* Glassmorphism Card Adjustment */
   .about-glass-container {
-    margin-top: 2rem;
-    padding: 2.5rem 2rem; /* Card ke andar ki space compact ki hai */
-    width: 95%; /* Horizontal space zyada use karne ke liye */
+    margin-top: 0.5rem;
+    padding: 1.5rem 2rem 2rem 2rem; /* Andar ki padding aur tight ki hai */
+    width: 95%; 
+    height: auto;
   }
 
   .about-glass-container .main-heading {
-    font-size: 2.8rem; /* Heading thori choti ki hai */
+    font-size: 2.2rem; /* Heading thori mazeed choti ki */
   }
 
-  /* Text Readability Fixes */
+  /* 🔥 Yahan Main Masla Tha: Divider ka massive 10rem margin khatam kiya 🔥 */
+  .about-glass-container .header-divider {
+    margin: 1rem auto 1.5rem auto; 
+    width: 15rem; /* Divider ki width screen ke hisaab se adjust ki */
+  }
+
+  /* Text Readability & Spacing Fixes */
   .about p {
     font-size: 1.1rem;
-    line-height: 1.6; /* Overlap se bachne ke liye perfect line-height */
-    margin-top: 1.2rem;
+    line-height: 1.5; 
+    margin-top: 0.5rem; /* Pehle yeh 3.5rem tha, isko minimize kiya */
     margin-bottom: 0.5rem;
-    padding-top: 0;
   }
-   
 }
