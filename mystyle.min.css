@@ -2175,19 +2175,19 @@ color: var(--main-color) ;
 
   /* Background Floating Text */
   .about-name {
-    top: 5rem; 
-    font-size: 4rem; 
+    top: 8rem; 
+    font-size: 6rem; 
   }
 
   .about-role {
-    top: 10rem; 
-    font-size: 4rem;
+    top: 12rem; 
+    font-size: 6rem;
   }
 
   /* Glassmorphism Card Adjustment */
   .about-glass-container {
     margin-top: 0.5rem;
-    padding: 1.5rem 2rem 2rem 2rem; /* Andar ki padding aur tight ki hai */
+    padding: 4rem 2rem 4rem 2rem; /* Andar ki padding aur tight ki hai */
     width: 95%; 
     height: auto;
   }
