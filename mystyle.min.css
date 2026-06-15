@@ -2169,7 +2169,7 @@ color: var(--main-color) ;
   }
 
   .about-section {
-    padding: 6rem 2rem 2rem 2rem; /* Bottom padding mazeed kam ki hai */
+    padding: 4rem 2rem 2rem 2rem; /* Bottom padding mazeed kam ki hai */
     min-height: auto;
   }
 
@@ -2204,8 +2204,8 @@ color: var(--main-color) ;
 
   /* Text Readability & Spacing Fixes */
   .about p {
-    font-size: 1.2rem;
-    line-height: 2rem; 
+    font-size: 1rem;
+    line-height: 1.8rem; 
     margin-top: 0.5rem; /* Pehle yeh 3.5rem tha, isko minimize kiya */
     margin-bottom: 0.5rem;
   }
