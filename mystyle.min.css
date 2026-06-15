@@ -2278,60 +2278,23 @@ color: var(--main-color) ;
   /* SKILLS SECTION FIX (Landscape)            */
   /* ========================================= */
 
-  .skillset-section {
-    padding-top: 4rem; /* Top padding drastically kam kar di */
-  }
-
-  /* Heading aur icons ke darmiyan gap kam karne ke liye */
-  .skillset-section .header-divider {
-    margin: 1rem auto 2.5rem auto; 
-    width: 15rem;
+   .skillset-section {
+    padding-top: 5rem;
   }
 
   .container-skillset {
     margin: 0 auto;
-    padding-top: 0;
-    gap: 3rem 1.5rem; /* 🔥 Yahan gap 10rem se kam karke 3rem kar diya 🔥 */
-    justify-content: center;
+    padding-top: 2rem;
+    gap: 10rem 1rem;
   }
 
   .skill {
-    width: 20%; /* Landscape mein screen wide hoti hai, to 4 items per row perfectly fit honge */
-    height: 8rem;
-    margin: 0; 
-    padding: 0;
+    width: 20%;
+    height: 7.5rem;
+    margin: 3rem 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  /* --- Icons Resize for Landscape Height --- */
-  /* Landscape ki choti height ke liye circles ko thora scale down kiya hai */
-  .title-card {
-    height: 9rem;
-    width: 9rem;
   }
-
-  .title-circle {
-    height: 10rem;
-    width: 10rem;
-  }
-
-  .title-circle::after {
-    height: 8.5rem;
-    width: 8.5rem;
-  }
-
-  .title-overlay {
-    height: 5rem;
-    width: 5rem;
-  }
-
-  /* Andar ke Font Awesome icons ko resize kiya */
-  .html, .css { font-size: 6rem; }
-  .javascript { font-size: 5.5rem; }
-  .react, .github { font-size: 6.5rem; }
-  .bootstrap { font-size: 7rem; }
-  .git { font-size: 7.5rem; }
-
-  .title-circle p {
-    font-size: 1.2rem; /* Hover text size adjust kiya */
-  }
-}
