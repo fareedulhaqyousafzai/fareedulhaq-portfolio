@@ -2077,60 +2077,86 @@ color: var(--main-color) ;
 }
 
 
+/* ======================================================= */
+/* MOBILE LANDSCAPE MODE FIX                               */
+/* ======================================================= */
+
 @media (max-width: 1000px) and (max-height: 600px) and (orientation: landscape) {
-  
-  /* Wave ko chota aur neechay rakhein */
-  .custom-shape-divider-bottom-1716734170 svg {
-    height: 70px !important; 
-  }
 
-  /* MAIN FIX: Content ko upar lane ke liye */
-  .container-main {
-    height: 100vh !important; /* Lambaai normal wapas kardi */
-    align-items: flex-start !important; /* YE LINE CONTENT KO UPAR LAYEGI */
-    padding-top: 12rem !important; /* Navbar ke neeche se margin */
-    padding-bottom: 2rem !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    gap: 4rem !important; /* Text aur image ke darmiyan fasla */
-  }
-
-  /* Text ko screen ke hisaab se set kiya */
-  .heading {
-    font-size: 4.5rem !important;
-  }
-  .subheading {
-    font-size: 2.5rem !important;
-    letter-spacing: 2px !important;
-  }
-  .main-contact-btn {
-    padding: 1.2rem 2rem !important;
-    font-size: 1.2rem !important;
-    margin-top: 1rem !important;
-  }
-
-  /* Image Container ko adjust kiya */
-  .hero-img-container {
-    width: 160px !important;
-    height: 160px !important;
-    margin-top: -1rem !important; /* Image ko thora sa mazeed upar shift kiya */
-  }
-
-  /* Navbar ki styling */
+  /* --- Navbar Alignment --- */
   .container-nav {
-    height: 5.5rem !important;
-    padding: 0 1.5rem !important;
-    top: 5px !important;
-    width: 96%;
-  }
-  nav ul {
-    gap: 2rem !important;
-  }
-  nav li a {
-    font-size: 1.2rem !important;
-  }
-  .portfolio-logo {
-    font-size: 2.5rem !important;
+    height: 5rem; /* Navbar ki height kam ki hai taake screen par space bache */
+    padding: 0 2rem;
+    top: 5px;
   }
 
+  .portfolio-logo {
+    font-size: 2.2rem;
+  }
+
+  /* Hamburger menu landscape me easily accessible banane ke liye */
+  #toggle_button {
+    font-size: 2.5rem;
+    width: 35px;
+    height: 35px;
+  }
+
+  nav ul {
+    gap: 2rem;
+  }
+
+  nav li a {
+    font-size: 1.2rem;
+  }
+
+  /* --- Hero / Main Section Alignment --- */
+  .container-main {
+    height: auto; /* 100vh hٹا diya taake content overlap na ho */
+    min-height: 100vh;
+    flex-direction: row; /* Image aur text ko side-by-side kiya hai */
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem; /* Navbar ke neeche se start karne ke liye */
+    padding-bottom: 4rem;
+    gap: 3rem;
+  }
+
+  .content-section {
+    width: 55%; /* Text section ki width adjust ki */
+    text-align: left; /* Landscape me left-align zyada clean lagta hai */
+  }
+
+  .subheading {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .heading {
+    font-size: 3.5rem; /* Font chota kiya taake 1 line me fit ho */
+  }
+
+  .hero-btn-group {
+    justify-content: flex-start; /* Buttons ko text ke sath align kiya */
+    margin-top: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .main-contact-btn, 
+  .secondary-btn {
+    padding: 1rem 1.8rem;
+    font-size: 1.1rem;
+  }
+
+  /* --- Hero Image Alignment --- */
+  .hero-img-container {
+    width: 180px; /* Image ko landscape ke hisab se resize kiya */
+    height: 180px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* --- Bottom Wave Shape Divider --- */
+  .custom-shape-divider-bottom-1716734170 svg {
+    height: 40px; /* Wave ki height kam ki taake screen gher na le */
+  }
 }
