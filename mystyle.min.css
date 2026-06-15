@@ -2086,7 +2086,7 @@ color: var(--main-color) ;
   /* --- Navbar Alignment --- */
   .container-nav {
     height: 5rem; /* Navbar ki height kam ki hai taake screen par space bache */
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
     top: 5px;
   }
 
@@ -2149,15 +2149,15 @@ color: var(--main-color) ;
 
   /* --- Hero Image Alignment --- */
   .hero-img-container {
-    width: 180px; /* Image ko landscape ke hisab se resize kiya */
-    height: 180px;
+    width: 150px; /* Image ko landscape ke hisab se resize kiya */
+    height: 150px;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   /* --- Bottom Wave Shape Divider --- */
   .custom-shape-divider-bottom-1716734170 svg {
-    height: 40px; /* Wave ki height kam ki taake screen gher na le */
+    height: 50px; /* Wave ki height kam ki taake screen gher na le */
   }
 
   /* ========================================= */
