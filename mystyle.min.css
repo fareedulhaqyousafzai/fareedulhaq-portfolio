@@ -2393,6 +2393,7 @@ color: var(--main-color) ;
  
   .projects-section {
     margin-top: 1rem;
+    padding-top: 1rem;
   }
 
   .section-subtitle {
@@ -2448,7 +2449,7 @@ color: var(--main-color) ;
     height: 200px;
     max-height: none;
     margin: 0 2%;
-    flex: 1 0 35%;
+    flex: 1 0 45%;
     scroll-snap-align: center;
     overflow: hidden;
     border-radius: 16px;
