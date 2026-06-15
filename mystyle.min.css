@@ -2165,7 +2165,7 @@ color: var(--main-color) ;
   /* ========================================= */
 
   .header-divider{
-    padding: 4rem;
+    margin-bottom: 1rem; /* Divider ke neeche ka gap kam kiya */
   }
 
   .about-section {
