@@ -42,9 +42,9 @@
   
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="mystyle.min.css" />
-
 </head>
 <body>
+  
   <script>
     if (localStorage.getItem("lightMode") === "true") {
       document.body.classList.add("light-mode");
@@ -71,6 +71,7 @@
     <div class="portfolio-logo">
       Fareed<span class="logo-dot">.</span>
     </div>
+    
     <nav>
       <ul id="nav-menu">
         <li class="nav-item"><a class="nav-link" href="#main-section">Home</a></li>
@@ -94,9 +95,9 @@
   </header>
 
   <main>
-    
+  
     <section class="container-main" id="main-section">
-      <div class="content-section" data-aos="fade-right" data-aos-duration="1500">
+      <div class="content-section" data-aos="fade-right" data-aos-duration="1000">
         <div class="subheading">
           <span class="textEffect"></span><span class="last">|</span>
         </div>
@@ -111,7 +112,7 @@
         </div>
       </div>
       
-      <div class="hero-img-container" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+      <div class="hero-img-container" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
         <div class="img-glow-bg"></div>
         <img src="assets/images/fareed-picture.webp" alt="Fareed Ul Haq - Front End Developer" class="hero-img" fetchpriority="high" />
       </div>
@@ -128,7 +129,7 @@
     <section class="about-section" id="about-section">
       <h1 class="about-name">FAREED UL HAQ</h1>
       <h3 class="about-role">Front-End Developer!</h3>
-      <div class="about-glass-container" data-aos="fade-up" data-aos-duration="1500">
+      <div class="about-glass-container" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="main-heading">About</h1>
         <div class="header-divider" data-aos="fade-right" data-aos-delay="300"></div>
         <div class="about">
@@ -177,7 +178,9 @@
     <section class="skillset-section" id="skillset-section">
       <h1 class="main-heading" data-aos="fade-up">Skills</h1>
       <div class="header-divider" data-aos="fade-right" data-aos-delay="200"></div>
+      
       <div class="container-skillset">
+        
         <div class="skill" data-aos="fade-up">
           <div class="title-card">
             <div class="title-overlay" id="html-overlay"></div>
@@ -187,6 +190,7 @@
             </div>
           </div>
         </div>
+        
         <div class="skill" data-aos="fade-up" data-aos-delay="200">
           <div class="title-card">
             <div class="title-overlay" id="css-overlay"></div>
@@ -196,6 +200,7 @@
             </div>
           </div>
         </div>
+        
         <div class="skill" data-aos="fade-up" data-aos-delay="400">
           <div class="title-card">
             <div class="title-overlay" id="javascript-overlay"></div>
@@ -205,6 +210,7 @@
             </div>
           </div>
         </div>
+        
         <div class="skill" data-aos="fade-up" data-aos-delay="800">
           <div class="title-card">
             <div class="title-overlay" id="bootstrap-overlay"></div>
@@ -214,6 +220,7 @@
             </div>
           </div>
         </div>
+        
         <div class="skill" data-aos="fade-up" data-aos-delay="1000">
           <div class="title-card">
             <div class="title-overlay" id="git-overlay"></div>
@@ -223,6 +230,7 @@
             </div>
           </div>
         </div>
+        
         <div class="skill" data-aos="fade-up" data-aos-delay="1200">
           <div class="title-card">
             <div class="title-overlay" id="github-overlay"></div>
@@ -232,18 +240,21 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
-<section class="projects-section" id="projects-section">
-      <h2 class="main-heading">PROJECTS</h2>
-      <div class="header-divider" ></div>
+
+    <section class="projects-section" id="projects-section">
+      <h2 class="main-heading" data-aos="fade-down">PROJECTS</h2>
+      <div class="header-divider" data-aos="fade-right" data-aos-delay="200"></div>
+      <p class="section-subtitle">Swipe to explore my latest creative work</p>
       
       <div class="slider-wrapper">
         <button id="slideLeft" class="slider-btn left-btn"><i class="fa-solid fa-chevron-left"></i></button>
 
         <div class="projects-grid" id="projectSlider">
           
-          <article class="project-card" >
+          <article class="project-card" data-aos="fade-right" data-aos-delay="100">
             <div class="project-browser">
               <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
               <span class="browser-title">Landing Page</span>
@@ -264,7 +275,7 @@
             </div>
           </article>
 
-          <article class="project-card" >
+          <article class="project-card" data-aos="zoom-in" data-aos-delay="300">
             <div class="project-browser">
               <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
               <span class="browser-title">Agency Website</span>
@@ -285,7 +296,7 @@
             </div>
           </article>
 
-          <article class="project-card" >
+          <article class="project-card" data-aos="fade-left" data-aos-delay="500">
             <div class="project-browser">
               <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
               <span class="browser-title">Portfolio Design</span>
@@ -304,46 +315,54 @@
               </div>
             </div>
           </article>
-          
-        </div> <button id="slideRight" class="slider-btn right-btn"><i class="fa-solid fa-chevron-right"></i></button>
-       
+        </div> 
 
-    <div class="slider-dots" id="sliderDots">
-      <div class="slider-dot active" data-index="0"></div>
-      <div class="slider-dot" data-index="1"></div>
-      <div class="slider-dot" data-index="2"></div>
-    </div>
+        <button id="slideRight" class="slider-btn right-btn"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="slider-dots" id="sliderDots">
+          <div class="slider-dot active" data-index="0"></div>
+          <div class="slider-dot" data-index="1"></div>
+          <div class="slider-dot" data-index="2"></div>
+        </div>
       </div>
     </section>
+
     <section class="contact-section" id="contact-section">
       <h2 class="main-heading" data-aos="fade-right">Let's Connect</h2>
       <div class="header-divider" data-aos="fade-right" data-aos-delay="200"></div>
+      
       <div class="contact-container">
+        
         <div data-aos="fade-up" data-aos-delay="100">
           <a href="https://www.linkedin.com/in/fareedulhaqyousafzai/" target="_blank" class="contact-card social-linkedin" aria-label="LinkedIn Profile">
             <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
           </a>
         </div>
+        
         <div data-aos="fade-down" data-aos-delay="200">
           <a href="https://github.com/fareedulhaqyousafzai" target="_blank" class="contact-card social-github" aria-label="GitHub Profile">
             <i class="fa-brands fa-github"></i><span>GitHub</span>
           </a>
         </div>
+        
         <div data-aos="fade-up" data-aos-delay="300">
           <a href="https://wa.me/923444470708" target="_blank" class="contact-card direct-whatsapp" aria-label="WhatsApp">
             <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
           </a>
         </div>
+        
         <div data-aos="fade-down" data-aos-delay="400">
           <a href="mailto:fareedulhaqyousafzai@gmail.com" class="contact-card direct-email" aria-label="Email Address">
             <i class="fa-regular fa-envelope"></i><span>Email Me</span>
           </a>
         </div>
+        
         <div data-aos="fade-up" data-aos-delay="500">
           <div class="contact-card location-card">
             <i class="fa-solid fa-location-dot"></i><span>Karachi, Pakistan</span>
           </div>
         </div>
+        
       </div>
     </section>
   </main> 
@@ -352,6 +371,7 @@
     <a href="#main-section" class="scroll-top pulsing-btn" title="Go to top" data-aos="zoom-in" data-aos-offset="50">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
+    
     <div class="footer-content" data-aos="fade-up" data-aos-offset="50">
       <p class="footer-para">
         &copy; <script>document.write(new Date().getFullYear());</script>
@@ -365,10 +385,6 @@
 
   <script defer src="myscripts.min.js"></script>
   <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script defer>
-    document.addEventListener("DOMContentLoaded", function() {
-      AOS.init();
-    });
-  </script>
+
 </body>
 </html>
