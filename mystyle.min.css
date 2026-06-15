@@ -2137,30 +2137,78 @@ color: var(--main-color) ;
       NAVBAR
   ========================================= */
   
-  .container-nav {
-    height: 5rem; /* Navbar ki height kam ki hai taake screen par space bache */
-    padding: 0.5rem 2rem;
-    top: 5px;
+.container-nav {
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0rem 4rem 0rem;
   }
 
-  .portfolio-logo {
-    font-size: 2.2rem;
-  }
-
-  /* Hamburger menu landscape me easily accessible banane ke liye */
-  #toggle_button {
-    font-size: 2.5rem;
-    width: 35px;
-    height: 35px;
+  nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0.2rem;
+    top: 8.5rem;
+    margin-right: 0;
+    padding: 0;
   }
 
   nav ul {
-    gap: 2rem;
+    display: none;
+    border-radius: 10px;
+    background-color: color-mix(in srgb, var(--body) 70%, transparent);
+    backdrop-filter: blur(20px);
+    padding: 0.1rem;
+    box-shadow: var(--b-shadow-black-color);
+  }
+
+  nav ul.nav-active {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 
   nav li a {
-    font-size: 1.2rem;
+    display: block;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    font-size: 12px;
   }
+
+  nav li a::after {
+    display: none;
+  }
+
+  nav a:hover {
+    background-color: var(--font-color);
+    border-radius: 10px;
+  }
+
+  #toggle_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 9999999;
+    width: 45px;
+    height: 45px;
+    font-size: 3rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: var(--font-color);
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #toggle_button i,
+  #toggle_button span {
+    pointer-events: none;
+  }
+
 
   /* --- Hero / Main Section Alignment --- */
   .container-main {
