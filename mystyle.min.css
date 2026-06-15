@@ -2175,12 +2175,12 @@ color: var(--main-color) ;
 
   /* Background Floating Text */
   .about-name {
-    top: 10rem; 
+    top: 12rem; 
     font-size: 5rem; 
   }
 
   .about-role {
-    top: 15rem; 
+    top: 17rem; 
     font-size: 5rem;
   }
 
