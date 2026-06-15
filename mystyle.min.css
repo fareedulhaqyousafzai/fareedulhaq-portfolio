@@ -2164,6 +2164,10 @@ color: var(--main-color) ;
   /* ABOUT SECTION FIX (Landscape Perfected)   */
   /* ========================================= */
 
+  .header-divider{
+    padding: 4rem;
+  }
+
   .about-section {
     padding: 6rem 2rem 2rem 2rem; /* Bottom padding mazeed kam ki hai */
     min-height: auto;
