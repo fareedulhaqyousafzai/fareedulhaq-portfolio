@@ -2093,7 +2093,7 @@ color: var(--main-color) ;
   }
 
   .main-heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .header-divider {
@@ -2386,6 +2386,79 @@ color: var(--main-color) ;
   .title-circle p {
     font-size: 1.2rem; /* Hover text size adjust kiya */
   }
-  
+  /* ========================================= */
+  /* PROJECTS SECTION FIX (Landscape)          */
+  /* ========================================= */
+
+  .projects-section {
+    margin-top: 2rem; 
+    padding-top: 4rem; /* Top spacing ko drastically reduce kiya */
+    padding-bottom: 2rem;
+  }
+
+  /* Heading ke neeche wali line ko baqi layout se match kiya */
+  .projects-section .header-divider {
+    margin: 1rem auto 1.5rem auto;
+    width: 15rem;
+  }
+
+  .section-subtitle {
+    margin-top: 0;
+    margin-bottom: 1.5rem; /* Gap kam kiya taake slider cut na ho */
+  }
+
+  /* Slider Card Landscape Fix */
+  .project-card,
+  .project-card:hover,
+  .project-card:active,
+  .projects-grid:not(:hover) .project-card:nth-child(2) {
+    height: 220px; 
+    flex: 0 0 60%; /* 🔥 85% se 60% kar diya taake card wide screen par stretch na ho */
+    margin: 0 1.5rem; /* Cards ke darmyan ka gap adjust kiya */
+  }
+
+  /* Card ke andar ka content scale down kiya taake sab kuch theek se fit ho */
+  .project-overlay {
+    padding: 1rem;
+  }
+
+  .project-overlay h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .project-tags {
+    margin-bottom: 5px;
+  }
+
+  .project-actions {
+    margin-top: 0.3rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .project-actions a {
+    padding: 0.6rem 1.2rem; /* Buttons thore sleek kiye */
+    font-size: 0.75rem;
+  }
+
+  /* Slider Navigation Arrows - Safe Area me laane ke liye */
+  .slider-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .left-btn {
+    left: 10px; /* -15px se 10px kiya taake screen bezels ke andar rahe */
+  }
+
+  .right-btn {
+    right: 10px;
+  }
+
+  /* Slider Dots Alignment */
+  .slider-dots {
+    margin-top: 1.5rem; /* Gap shrink kiya */
+  }
 
   }
