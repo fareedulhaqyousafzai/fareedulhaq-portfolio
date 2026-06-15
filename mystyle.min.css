@@ -2228,7 +2228,7 @@ color: var(--main-color) ;
 
   /* Container ko center kiya aur left se safe space di */
   .timeline-container {
-    width: 95%;
+    width: 75%;
     max-width: 800px;
     margin: 0 auto; /* Horizontally center */
     padding-top: 0;
@@ -2237,9 +2237,9 @@ color: var(--main-color) ;
 
   /* Vertical line ko icons ke theek center me align kiya */
   .timeline-container::before {
-    top: 0;
-    bottom: 0;
-    left: 4.6rem; /* Icon ke size aur padding ke hisaab se perfect center */
+    top: 4rem;
+    bottom: 4rem;
+    left: 3.5rem; /* Icon ke size aur padding ke hisaab se perfect center */
   }
 
   .timeline-item {
