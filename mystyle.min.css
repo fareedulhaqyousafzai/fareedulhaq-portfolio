@@ -2116,7 +2116,7 @@ color: var(--main-color) ;
     height: auto; /* 100vh hٹا diya taake content overlap na ho */
     min-height: 100vh;
     flex-direction: row; /* Image aur text ko side-by-side kiya hai */
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-top: 8rem; /* Navbar ke neeche se start karne ke liye */
     padding-bottom: 4rem;
