@@ -2278,23 +2278,29 @@ color: var(--main-color) ;
   /* SKILLS SECTION FIX (Landscape)            */
   /* ========================================= */
 
-   .skillset-section {
-    padding-top: 5rem;
+  .skillset-section {
+    padding-top: 4rem; /* Top padding drastically kam kar di */
+  }
+
+  /* Heading aur icons ke darmiyan gap kam karne ke liye */
+  .skillset-section .header-divider {
+    margin: 1rem auto 2.5rem auto; 
+    width: 15rem;
   }
 
   .container-skillset {
     margin: 0 auto;
-    padding-top: 2rem;
-    gap: 10rem 1rem;
+    padding-top: 0;
+    gap: 3rem 1.5rem; /* 🔥 Yahan gap 10rem se kam karke 3rem kar diya 🔥 */
+    justify-content: center;
   }
 
   .skill {
-    width: 20%;
-    height: 7.5rem;
-    margin: 3rem 0; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 20%; /* Landscape mein screen wide hoti hai, to 4 items per row perfectly fit honge */
+    height: 8rem;
+    margin: 0; 
+    padding: 0;
   }
+  
 
   }
