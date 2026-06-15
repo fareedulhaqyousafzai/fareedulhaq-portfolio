@@ -2436,7 +2436,7 @@ color: var(--main-color) ;
     height: 200px;
     max-height: none;
     margin: 0 2rem 0 2rem;
-    flex: 1 0 50%;
+    flex: 1 0 40%;
     scroll-snap-align: center;
     overflow: hidden;
     border-radius: 16px;
