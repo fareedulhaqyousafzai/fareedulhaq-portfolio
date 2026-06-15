@@ -2409,20 +2409,7 @@ color: var(--main-color) ;
     z-index: 1;
   }
 
-  .slider-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-    height: 250px;
-    background: var(--main-color);
-    filter: blur(100px);
-    opacity: 0.25;
-    z-index: -1;
-    border-radius: 50%;
-  }
+
 
   .projects-grid {
     display: flex;
@@ -2434,7 +2421,7 @@ color: var(--main-color) ;
     padding: 0;
     scrollbar-width: none;
     gap: 0rem;
-    width: 98%;
+    width: 100%;
   }
 
   .projects-grid::-webkit-scrollbar {
