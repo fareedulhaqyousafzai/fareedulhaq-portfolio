@@ -2089,7 +2089,7 @@ color: var(--main-color) ;
   ========================================= */
 
   html {
-    font-size: 50%; /* Wide screen par text thora clear parhne ke liye 45% se 50% kar diya */
+    font-size: 40%; /* Wide screen par text thora clear parhne ke liye 45% se 50% kar diya */
   }
 
   .main-heading {
