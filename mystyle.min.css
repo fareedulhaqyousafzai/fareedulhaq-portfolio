@@ -2089,7 +2089,7 @@ color: var(--main-color) ;
   ========================================= */
 
   html {
-    font-size: 40%; /* Wide screen par text thora clear parhne ke liye 45% se 50% kar diya */
+    font-size: 45%; /* Wide screen par text thora clear parhne ke liye 45% se 50% kar diya */
   }
 
   .main-heading {
@@ -2390,75 +2390,224 @@ color: var(--main-color) ;
   /* PROJECTS SECTION FIX (Landscape)          */
   /* ========================================= */
 
+  /* =========================================
+     PROJECTS SECTION (CLEAN & VIP LUXURY)
+  ========================================= */
   .projects-section {
-    margin-top: 2rem; 
-    padding-top: 4rem; /* Top spacing ko drastically reduce kiya */
-    padding-bottom: 2rem;
-  }
-
-  /* Heading ke neeche wali line ko baqi layout se match kiya */
-  .projects-section .header-divider {
-    margin: 1rem auto 1.5rem auto;
-    width: 15rem;
+    margin-top: 10rem;
   }
 
   .section-subtitle {
-    margin-top: 0;
-    margin-bottom: 1.5rem; /* Gap kam kiya taake slider cut na ho */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--font-color);
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
   }
 
-  /* Slider Card Landscape Fix */
+  .slider-wrapper {
+    margin-top: 0;
+    padding: 1rem 2rem 0 2rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .slider-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: var(--main-color);
+    filter: blur(100px);
+    opacity: 0.25;
+    z-index: -1;
+    border-radius: 50%;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+    padding: 0;
+    scrollbar-width: none;
+    gap: 0rem;
+    width: 98%;
+  }
+
+  .projects-grid::-webkit-scrollbar {
+    display: none;
+  }
+
   .project-card,
   .project-card:hover,
   .project-card:active,
   .projects-grid:not(:hover) .project-card:nth-child(2) {
-    height: 220px; 
-    flex: 0 0 60%; /* 🔥 85% se 60% kar diya taake card wide screen par stretch na ho */
-    margin: 0 1.5rem; /* Cards ke darmyan ka gap adjust kiya */
+    width: 90%;
+    height: 220px;
+    max-height: none;
+    margin: 0 7.5%;
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: none;
+    transition: all 0.4s ease;
   }
 
-  /* Card ke andar ka content scale down kiya taake sab kuch theek se fit ho */
+  .project-browser {
+    height: 3rem;
+  }
+
+  .browser-title {
+    font-size: 8px;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
+
   .project-overlay {
-    padding: 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    border-radius: 0 0 16px 16px;
   }
 
   .project-overlay h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-overlay p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .project-tags {
-    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 3px;
+  }
+
+  .project-tags span {
+    font-size: 0.7rem;
+    padding: 3px 6px;
   }
 
   .project-actions {
-    margin-top: 0.3rem;
-    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .project-actions a {
-    padding: 0.6rem 1.2rem; /* Buttons thore sleek kiye */
-    font-size: 0.75rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 0.8rem;
+    width: auto;
+    white-space: nowrap;
+    border-radius: 5px;
   }
 
-  /* Slider Navigation Arrows - Safe Area me laane ke liye */
+  
   .slider-btn {
-    width: 38px;
-    height: 38px;
-    font-size: 1rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
   }
 
   .left-btn {
-    left: 10px; /* -15px se 10px kiya taake screen bezels ke andar rahe */
+    left: -15px;
   }
 
   .right-btn {
-    right: 10px;
+    right: -15px;
   }
 
-  /* Slider Dots Alignment */
+  .slider-btn:hover {
+    border-color: var(--main-color);
+    background: color-mix(in srgb, var(--main-color) 10%, transparent);
+    color: var(--main-color);
+    transform: translateY(-50%) scale(1.08);
+    box-shadow: 0 0 15px color-mix(in srgb, var(--main-color) 30%, transparent);
+  }
+
+  .slider-btn:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+
   .slider-dots {
-    margin-top: 1.5rem; /* Gap shrink kiya */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2.5rem;
+  }
+
+  .slider-dot {
+    width: 18px;
+    height: 4px;
+    border-radius: 10px;
+    background: var(--font-color);
+    cursor: pointer;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider-dot:hover {
+    background: rgba(255, 255, 255, 0.4);
+    height: 6px;
+  }
+
+  .slider-dot.active {
+    width: 45px;
+    background: var(--main-color);
+    box-shadow: 0 0 12px color-mix(in srgb, var(--main-color) 40%, transparent);
+  }
+
+  .slider-dot.active::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
 
   }
