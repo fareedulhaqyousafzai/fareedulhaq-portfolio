@@ -2553,6 +2553,39 @@ color: var(--main-color) ;
     display: none;
     
   }
+/* ========================================= */
+  /* CONTACT SECTION FIX (Landscape)           */
+  /* ========================================= */
 
+  .contact-section {
+    padding: 4rem 5% 2rem 5%; /* 10rem ki massive padding ko drastically kam kar diya */
+  }
+
+  /* Heading ke baad wale divider ko standardize kiya */
+  .contact-section .header-divider {
+    margin: 1rem auto 2rem auto;
+    width: 15rem;
+  }
+
+  .contact-container {
+    padding-top: 0; /* Extra top padding remove kar di */
+    gap: 1.5rem; /* 3rem ke gap ko half kar diya taake cards horizontally fit hon */
+  }
+
+  /* Glass Cards ko wide screen ke hisaab se compact kiya */
+  .contact-card {
+    width: 120px; /* Width thori kam ki taake ek line me fit asaken */
+    height: 85px;
+    padding: 0.8rem;
+    gap: 8px; /* Icon aur text ke darmyan gap kam kiya */
+  }
+
+  .contact-card i {
+    font-size: 2.2rem; /* Icon thora chota kiya */
+  }
+
+  .contact-card span {
+    font-size: 0.9rem; /* Text chota kiya taake card se bahar na nikle */
+  }
 
   }
