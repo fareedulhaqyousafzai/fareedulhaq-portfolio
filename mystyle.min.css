@@ -2205,7 +2205,7 @@ color: var(--main-color) ;
     width: 150px; /* Image ko landscape ke hisab se resize kiya */
     height: 150px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
 
   /* --- Bottom Wave Shape Divider --- */
