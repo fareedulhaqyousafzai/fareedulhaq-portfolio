@@ -2016,7 +2016,7 @@ color: var(--main-color) ;
 
   .contact-card {
     width: 130px;
-    height: 80px;
+    height: 75px;
     flex: none;
     padding: 1rem;
     display: flex;
@@ -2575,7 +2575,7 @@ color: var(--main-color) ;
   /* Glass Cards ko wide screen ke hisaab se compact kiya */
   .contact-card {
     width: 120px; /* Width thori kam ki taake ek line me fit asaken */
-    height: 85px;
+    height: 75px;
     padding: 0.8rem;
     gap: 8px; /* Icon aur text ke darmyan gap kam kiya */
   }
