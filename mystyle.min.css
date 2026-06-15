@@ -2279,7 +2279,7 @@ color: var(--main-color) ;
   /* ========================================= */
 
   .skillset-section {
-    padding-top: 4rem; /* Top padding drastically kam kar di */
+    padding-top: 6rem; /* Top padding drastically kam kar di */
   }
 
   /* Heading aur icons ke darmiyan gap kam karne ke liye */
@@ -2297,7 +2297,7 @@ color: var(--main-color) ;
 
   .skill {
     width: 20%; /* Landscape mein screen wide hoti hai, to 4 items per row perfectly fit honge */
-    height: 8rem;
+    height: 7.5rem;
     margin: 0; 
     padding: 0;
   }
