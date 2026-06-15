@@ -2205,7 +2205,7 @@ color: var(--main-color) ;
     width: 150px; /* Image ko landscape ke hisab se resize kiya */
     height: 150px;
     margin-top: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
   }
 
   /* --- Bottom Wave Shape Divider --- */
@@ -2396,16 +2396,8 @@ color: var(--main-color) ;
   }
 
   .section-subtitle {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: var(--font-color);
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    letter-spacing: 0.5px;
+    display: none;
+    
   }
 
 
@@ -2453,10 +2445,10 @@ color: var(--main-color) ;
   .project-card:active,
   .projects-grid:not(:hover) .project-card:nth-child(2) {
     width: 80%;
-    height: 180px;
+    height: 200px;
     max-height: none;
     margin: 0 7.5%;
-    flex: 0 0 80%;
+    flex: 1 0 35%;
     scroll-snap-align: center;
     overflow: hidden;
     border-radius: 16px;
@@ -2570,43 +2562,9 @@ color: var(--main-color) ;
   }
 
   .slider-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 2.5rem;
+    display: none;
+    
   }
 
-  .slider-dot {
-    width: 18px;
-    height: 4px;
-    border-radius: 10px;
-    background: var(--font-color);
-    cursor: pointer;
-    border: none;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .slider-dot:hover {
-    background: rgba(255, 255, 255, 0.4);
-    height: 6px;
-  }
-
-  .slider-dot.active {
-    width: 45px;
-    background: var(--main-color);
-    box-shadow: 0 0 12px color-mix(in srgb, var(--main-color) 40%, transparent);
-  }
-
-  .slider-dot.active::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
 
   }
