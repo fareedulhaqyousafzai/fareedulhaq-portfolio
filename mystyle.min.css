@@ -2268,7 +2268,7 @@ color: var(--main-color) ;
   /* ========================================= */
 
   .education-section {
-    padding: 6rem 2rem 2rem 2rem; 
+    padding: 8rem 2rem 2rem 2rem; 
   }
 
   /* 🔥 Heading ke baad ka massive gap khatam kiya 🔥 */
@@ -2332,7 +2332,7 @@ color: var(--main-color) ;
   /* ========================================= */
 
   .skillset-section {
-    padding-top: 6rem; /* Top padding drastically kam kar di */
+    padding-top: 8rem; /* Top padding drastically kam kar di */
   }
 
   /* Heading aur icons ke darmiyan gap kam karne ke liye */
@@ -2393,7 +2393,7 @@ color: var(--main-color) ;
  
   .projects-section {
     margin-top: 1rem;
-    padding-top: 1rem;
+    padding-top: 4rem;
   }
 
   .section-subtitle {
@@ -2420,7 +2420,7 @@ color: var(--main-color) ;
     align-items: center;
     padding: 0;
     scrollbar-width: none;
-    gap: 0rem;
+    gap: 2rem;
     width: 90%;
   }
 
@@ -2435,8 +2435,8 @@ color: var(--main-color) ;
     width: 80%;
     height: 200px;
     max-height: none;
-    margin: 0 1rem 0 1rem;
-    flex: 1 0 45%;
+    margin: 0 2rem 0 2rem;
+    flex: 1 0 50%;
     scroll-snap-align: center;
     overflow: hidden;
     border-radius: 16px;
@@ -2530,11 +2530,11 @@ color: var(--main-color) ;
   }
 
   .left-btn {
-    left: -15px;
+    left: -10px;
   }
 
   .right-btn {
-    right: -15px;
+    right: -10px;
   }
 
   .slider-btn:hover {
