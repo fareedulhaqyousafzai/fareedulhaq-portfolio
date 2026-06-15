@@ -2402,13 +2402,7 @@ color: var(--main-color) ;
   }
 
 
-  .slider-wrapper {
-    margin-top: 0;
-    padding: 1rem 2rem 0 2rem;
-    position: relative;
-    z-index: 1;
-  }
-
+  
 
 
   .projects-grid {
