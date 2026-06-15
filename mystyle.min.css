@@ -2119,6 +2119,16 @@ color: var(--main-color) ;
     padding-top: 8rem; /* Navbar ke neeche se start karne ke liye */
     padding-bottom: 4rem;
     gap: 3rem;
+
+
+
+    height: 100vh !important; /* Lambaai normal wapas kardi */
+    align-items: flex-start !important; /* YE LINE CONTENT KO UPAR LAYEGI */
+    padding-top: 12rem !important; /* Navbar ke neeche se margin */
+    padding-bottom: 2rem !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 4rem !important; /* Text aur image ke darmiyan fasla */
   }
 
   .content-section {
@@ -2208,5 +2218,56 @@ color: var(--main-color) ;
     line-height: 2.2rem; 
     margin-top: 0.5rem; /* Pehle yeh 3.5rem tha, isko minimize kiya */
     margin-bottom: 0.5rem;
+  }
+
+
+  /* ========================================= */
+  /* EDUCATION SECTION FIX (Landscape)         */
+  /* ========================================= */
+
+  .education-section {
+    padding: 4rem 2rem 2rem 2rem; /* 20rem se kam kar ke 4rem kar diya taake screen par fit aaye */
+  }
+
+  .timeline-container {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Vertical line ko chote layout ke hisaab se adjust kiya */
+  .timeline-container::before {
+    top: 1.5rem; 
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .timeline-item {
+    margin-bottom: 2.5rem; /* Cards ke darmyan ka gap tight kar diya */
+    padding-left: 5.5rem;
+  }
+
+  .timeline-icon {
+    width: 4rem; /* Icon thora chota kiya taake space bache */
+    height: 4rem;
+    font-size: 1.5rem;
+    left: 0;
+  }
+
+  .timeline-content.glass-card {
+    padding: 1.5rem; /* Card ke andar ki spacing compact ki hai */
+  }
+
+  .timeline-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .timeline-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem; /* Heading aur text ke darmiyan gap kam kiya */
+  }
+
+  .timeline-text {
+    font-size: 1rem;
   }
 }
