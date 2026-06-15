@@ -2159,4 +2159,40 @@ color: var(--main-color) ;
   .custom-shape-divider-bottom-1716734170 svg {
     height: 40px; /* Wave ki height kam ki taake screen gher na le */
   }
+
+.about-section {
+    padding: 6rem 2rem 4rem 2rem; /* Vertical padding drastically reduced */
+  }
+
+  /* Background Floating Text Adjustment */
+  .about-name {
+    top: 8rem; /* Screen ke top ke qareeb laya gaya */
+    font-size: 7vw; /* Viewport width ke hisaab se scale hoga */
+  }
+
+  .about-role {
+    top: 14rem; /* Name ke foran baad align kiya gaya */
+    font-size: 4vw;
+  }
+
+  /* Glassmorphism Card Adjustment */
+  .about-glass-container {
+    margin-top: 2rem;
+    padding: 2.5rem 2rem; /* Card ke andar ki space compact ki hai */
+    width: 95%; /* Horizontal space zyada use karne ke liye */
+  }
+
+  .about-glass-container .main-heading {
+    font-size: 2.8rem; /* Heading thori choti ki hai */
+  }
+
+  /* Text Readability Fixes */
+  .about p {
+    font-size: 1.1rem;
+    line-height: 1.6; /* Overlap se bachne ke liye perfect line-height */
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0;
+  }
+   
 }
