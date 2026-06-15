@@ -2205,7 +2205,7 @@ color: var(--main-color) ;
   /* Text Readability & Spacing Fixes */
   .about p {
     font-size: 1rem;
-    line-height: 1.8rem; 
+    line-height: 2rem; 
     margin-top: 0.5rem; /* Pehle yeh 3.5rem tha, isko minimize kiya */
     margin-bottom: 0.5rem;
   }
