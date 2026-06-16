@@ -2335,19 +2335,19 @@ color: var(--main-color) ;
     max-width: 800px;
     margin: 0 auto; /* Horizontally center */
     padding-top: 0;
-    padding-left: 3rem; /* Left edge se door kiya taake icon cut na ho */
+    padding-left: 0rem; /* Left edge se door kiya taake icon cut na ho */
   }
 
   /* Vertical line ko icons ke theek center me align kiya */
   .timeline-container::before {
     top: 4rem;
     bottom: 4rem;
-    left: 3.5rem; /* Icon ke size aur padding ke hisaab se perfect center */
+    left: 5rem; /* Icon ke size aur padding ke hisaab se perfect center */
   }
 
   .timeline-item {
     margin-bottom: 2rem; /* Cards ke darmiyan gap kam kiya */
-    padding-left: 4.5rem; /* Icon aur text box ke darmiyan space */
+    padding-left: 6rem; /* Icon aur text box ke darmiyan space */
   }
 
   /* Icons ki styling aur placement */
