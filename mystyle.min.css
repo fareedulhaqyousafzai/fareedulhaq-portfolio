@@ -2486,7 +2486,7 @@ nav li a.active-link::after {
   .timeline-container::before {
     top: 4rem;
     bottom: 4rem;
-    left: -12rem;
+    left: 1rem;
   }
 
   .timeline-item {
