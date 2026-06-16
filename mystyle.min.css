@@ -2151,7 +2151,7 @@ color: var(--main-color) ;
     flex-direction: column;
     position: absolute;
     right: 0.2rem;
-    top: 3rem;
+    top: 5rem;
     margin-right: 0;
     padding: 0;
    
@@ -2384,7 +2384,7 @@ color: var(--main-color) ;
   /* ========================================= */
 
   .skillset-section {
-    padding-top: 8rem; /* Top padding drastically kam kar di */
+    padding-top: 9rem; /* Top padding drastically kam kar di */
   }
 
   /* Heading aur icons ke darmiyan gap kam karne ke liye */
@@ -2445,7 +2445,7 @@ color: var(--main-color) ;
  
   .projects-section {
     margin-top: 1rem;
-    padding-top: 8rem;
+    padding-top: 9rem;
   }
 
   .section-subtitle {
