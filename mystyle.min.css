@@ -2015,7 +2015,7 @@ color: var(--main-color) ;
   }
 
   .contact-card {
-    width: 120px;
+    width: 130px;
     height: 60px;
     flex: none;
     padding: 1rem;
@@ -2153,6 +2153,7 @@ color: var(--main-color) ;
     top: 8.5rem;
     margin-right: 0;
     padding: 0;
+    height: 3rem;
   }
 
   nav ul {
@@ -2185,6 +2186,10 @@ color: var(--main-color) ;
     background-color: var(--font-color);
     border-radius: 10px;
   }
+.portfolio-logo {
+  font-size: 3rem;
+  font-weight: 600;
+}
 
   #toggle_button {
     display: flex;
