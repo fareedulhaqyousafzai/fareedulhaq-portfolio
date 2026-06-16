@@ -1910,7 +1910,7 @@ nav li a:hover::after {
   .timeline-container::before {
     left: 1.5rem;
     top: 7rem;
-    bottom: 7rem;
+    bottom: 9rem;
   }
 
   .timeline-item {
@@ -1969,7 +1969,7 @@ nav li a:hover::after {
      PROJECTS SECTION MOBILE
   ========================================= */
   .projects-section {
-    margin-top: 10rem;
+    margin-top: 12rem;
   }
 
   .section-subtitle {
