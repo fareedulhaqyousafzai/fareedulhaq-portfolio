@@ -2358,6 +2358,14 @@ color: var(--main-color) ;
     left: 0; 
   }
 
+  .timeline-icon {
+    left: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.8rem;
+    border-width: 3px;
+  }
+
   /* Glass cards ko thora aur sleek banaya */
   .timeline-content.glass-card {
     padding: 1.5rem 2rem;
