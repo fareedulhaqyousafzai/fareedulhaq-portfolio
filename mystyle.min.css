@@ -2151,7 +2151,7 @@ color: var(--main-color) ;
     flex-direction: column;
     position: absolute;
     right: 0.2rem;
-    top: 8.5rem;
+    top: 3rem;
     margin-right: 0;
     padding: 0;
    
@@ -2384,7 +2384,7 @@ color: var(--main-color) ;
   /* ========================================= */
 
   .skillset-section {
-    padding-top: 10rem; /* Top padding drastically kam kar di */
+    padding-top: 8rem; /* Top padding drastically kam kar di */
   }
 
   /* Heading aur icons ke darmiyan gap kam karne ke liye */
@@ -2626,8 +2626,8 @@ color: var(--main-color) ;
 
   /* Glass Cards ko wide screen ke hisaab se compact kiya */
   .contact-card {
-    width: 140px; /* Width thori kam ki taake ek line me fit asaken */
-    height: 70px;
+    width: 120px; /* Width thori kam ki taake ek line me fit asaken */
+    height: 60px;
     padding: 0.8rem;
     gap: 8px; /* Icon aur text ke darmyan gap kam kiya */
   }
