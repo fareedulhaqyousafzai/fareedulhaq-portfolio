@@ -1909,8 +1909,8 @@ nav li a:hover::after {
 
   .timeline-container::before {
     left: 1.5rem;
-    top: 7rem;
-    bottom: 9rem;
+    top: 6.5rem;
+    bottom: 6.5rem;
   }
 
   .timeline-item {
@@ -2529,7 +2529,7 @@ nav li a:hover::after {
   .timeline-container::before {
     top: 4rem;
     bottom: 4rem;
-    right: 12rem;
+    left: -12rem;
   }
 
   .timeline-item {
