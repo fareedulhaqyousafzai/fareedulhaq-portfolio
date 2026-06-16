@@ -2143,6 +2143,7 @@ color: var(--main-color) ;
     margin: 0 auto;
     justify-content: space-between;
     padding: 0rem 4rem 0rem;
+    height: 6rem;
   }
 
   nav {
@@ -2153,7 +2154,7 @@ color: var(--main-color) ;
     top: 8.5rem;
     margin-right: 0;
     padding: 0;
-    height: 3rem;
+   
   }
 
   nav ul {
