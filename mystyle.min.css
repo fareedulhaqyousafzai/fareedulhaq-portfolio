@@ -2342,7 +2342,7 @@ color: var(--main-color) ;
   .timeline-container::before {
     top: 4rem;
     bottom: 4rem;
-    left: 10rem; /* Icon ke size aur padding ke hisaab se perfect center */
+    right: 8rem; /* Icon ke size aur padding ke hisaab se perfect center */
   }
 
   .timeline-item {
