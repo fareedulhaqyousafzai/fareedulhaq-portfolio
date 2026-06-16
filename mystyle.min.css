@@ -2151,7 +2151,7 @@ color: var(--main-color) ;
     flex-direction: column;
     position: absolute;
     right: 0.2rem;
-    top: 5rem;
+    top: 6.5rem;
     margin-right: 0;
     padding: 0;
    
@@ -2351,15 +2351,10 @@ color: var(--main-color) ;
   }
 
   /* Icons ki styling aur placement */
-  .timeline-icon {
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 1.4rem;
-    left: 0; 
-  }
+ 
 
   .timeline-icon {
-    left: 0;
+    left: 1rem;
     width: 4.5rem;
     height: 4.5rem;
     font-size: 1.8rem;
@@ -2397,14 +2392,14 @@ color: var(--main-color) ;
 
   /* Heading aur icons ke darmiyan gap kam karne ke liye */
   .skillset-section .header-divider {
-    margin: 1rem auto 2.5rem auto; 
+    margin: 1rem auto 2rem auto; 
     width: 15rem;
   }
 
   .container-skillset {
     margin: 0 auto;
     padding-top: 0;
-    gap: 3rem 1.5rem; /* 🔥 Yahan gap 10rem se kam karke 3rem kar diya 🔥 */
+    gap: 2.5rem 1.5rem; /* 🔥 Yahan gap 10rem se kam karke 3rem kar diya 🔥 */
     justify-content: center;
   }
 
