@@ -2015,8 +2015,8 @@ color: var(--main-color) ;
   }
 
   .contact-card {
-    width: 120px;
-    height: 60px;
+    width: 140px;
+    height: 70px;
     flex: none;
     padding: 1rem;
     display: flex;
@@ -2274,7 +2274,7 @@ color: var(--main-color) ;
   }
 
   .about-section {
-    padding: 8rem 2rem 2rem 2rem; /* Bottom padding mazeed kam ki hai */
+    padding: 10rem 2rem 2rem 2rem; /* Bottom padding mazeed kam ki hai */
     min-height: auto;
   }
 
@@ -2320,7 +2320,7 @@ color: var(--main-color) ;
   /* ========================================= */
 
   .education-section {
-    padding: 8rem 2rem 2rem 2rem; 
+    padding: 10rem 2rem 2rem 2rem; 
   }
 
   /* 🔥 Heading ke baad ka massive gap khatam kiya 🔥 */
@@ -2384,7 +2384,7 @@ color: var(--main-color) ;
   /* ========================================= */
 
   .skillset-section {
-    padding-top: 8rem; /* Top padding drastically kam kar di */
+    padding-top: 10rem; /* Top padding drastically kam kar di */
   }
 
   /* Heading aur icons ke darmiyan gap kam karne ke liye */
@@ -2401,7 +2401,7 @@ color: var(--main-color) ;
   }
 
   .skill {
-    width: 2%0; /* Landscape mein screen wide hoti hai, to 4 items per row perfectly fit honge */
+    width: 20%; /* Landscape mein screen wide hoti hai, to 4 items per row perfectly fit honge */
     height: 7.5rem;
     margin: 1rem 0; 
   }
@@ -2445,7 +2445,7 @@ color: var(--main-color) ;
  
   .projects-section {
     margin-top: 1rem;
-    padding-top: 4rem;
+    padding-top: 8rem;
   }
 
   .section-subtitle {
@@ -2610,7 +2610,7 @@ color: var(--main-color) ;
   /* ========================================= */
 
   .contact-section {
-    padding: 4rem 5% 2rem 5%; /* 10rem ki massive padding ko drastically kam kar diya */
+    padding: 6rem 5% 2rem 5%; /* 10rem ki massive padding ko drastically kam kar diya */
   }
 
   /* Heading ke baad wale divider ko standardize kiya */
@@ -2626,8 +2626,8 @@ color: var(--main-color) ;
 
   /* Glass Cards ko wide screen ke hisaab se compact kiya */
   .contact-card {
-    width: 120px; /* Width thori kam ki taake ek line me fit asaken */
-    height: 60px;
+    width: 140px; /* Width thori kam ki taake ek line me fit asaken */
+    height: 70px;
     padding: 0.8rem;
     gap: 8px; /* Icon aur text ke darmyan gap kam kiya */
   }
