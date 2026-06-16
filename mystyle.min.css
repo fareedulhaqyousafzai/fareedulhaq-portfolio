@@ -2639,43 +2639,39 @@ color: var(--main-color) ;
   .contact-card span {
     font-size: 0.9rem; /* Text chota kiya taake card se bahar na nikle */
   }
-/* ========================================= */
-  /* FOOTER SECTION FIX (Landscape)            */
-  /* ========================================= */
-
-  .footer-section {
-    padding: 2.5rem 5% 1.5rem 5%; /* Top aur bottom padding kam kar di */
-    margin-top: 2rem; /* Contact section se fasla kam kiya */
+.footer-section {
+    padding: 4rem 5% 2rem 5%;
+    margin-top: 4rem;
   }
 
   .footer-content {
-    gap: 8px; /* Dono paragraphs ke darmiyan gap shrink kiya */
+    gap: 15px;
   }
 
   .footer-para {
-    font-size: 1.1rem; /* Text thora sleek kiya */
+    font-size: 1.3rem;
   }
 
   .footer-logo {
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 
   .footer-logo .logo-dot {
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 
   .footer-built {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 
-  /* Scroll To Top Button Adjustments */
   .scroll-top {
-    width: 38px; /* Button ko thora chota kiya taake landscape me bulky na lage */
-    height: 38px;
-    font-size: 1.3rem;
-    top: -19px; /* Height ka half minus kiya taake theek center me rahe */
-    border-width: 2px;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    top: -22px;
+    border-width: 3px;
   }
 
-} /* 🔥 YEH BRACKET ZAROORI HAI: Landscape media query yahan close ho rahi hai 🔥 */
+}
+/* 🔥 YEH BRACKET ZAROORI HAI: Landscape media query yahan close ho rahi hai 🔥 */
   
