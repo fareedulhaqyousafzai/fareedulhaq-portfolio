@@ -1723,8 +1723,8 @@ color: var(--main-color) ;
 
   .timeline-container::before {
     left: 1.5rem;
-    top: 7.5rem;
-    bottom: 7.5rem;
+    top: 7rem;
+    bottom: 7rem;
   }
 
   .timeline-item {
