@@ -36,7 +36,7 @@
 
   /* Z-Index Hierarchy */
   --z-loader: 999;
-  --z-navbar: 100;
+  --z-navbar: 101;
 }
 
 /* LIGHT MODE VARIABLES (Override) */
@@ -1503,7 +1503,7 @@ nav li a.active-link::after {
     flex-direction: column;
     position: absolute;
     right: 0.2rem;
-    top: 8.5rem;
+    top: 7rem;
     margin-right: 0;
     padding: 0;
   }
