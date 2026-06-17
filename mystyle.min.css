@@ -18,10 +18,6 @@
   --b-shadow-main-color-hover: 0px 5px 15px rgba(16, 149, 213, 0.7);
   --b-shadow-black-color: 0 4px 15px rgba(0, 0, 0, 0.3);
   
-  /* UI Elements */
-  --browser-bar: #2d2d2d;
-  --browser-border: #2d2d2d;
-
   /* Brand Colors for Skills */
   --color-html: #e34f26;
   --color-html-hover: #f16529;
@@ -36,14 +32,14 @@
 
   /* Z-Index Hierarchy */
   --z-loader: 999;
-  --z-navbar: 101;
+  --z-navbar: 100;
 }
 
 /* LIGHT MODE VARIABLES (Override) */
 body.light-mode {
   --body: var(--white);
   --font-color: #1c354f;
-  --color-github: #181717; /* GitHub dark for light mode */
+  --color-github: #181717;
 }
 
 /* =========================================
@@ -59,18 +55,7 @@ body.light-mode {
   user-select: auto;
 }
 
-img,
-i,
-nav,
-button,
-.main-contact-btn,
-.secondary-btn,
-.title-card,
-.slider-btn,
-.slider-dot,
-.scroll-top,
-.theme-switch,
-#toggle_button {
+img, i, nav, button, .main-contact-btn, .secondary-btn, .title-card, .slider-btn, .slider-dot, .scroll-top, .theme-switch, #toggle_button {
   user-select: none;
 }
 
@@ -109,11 +94,8 @@ body {
 /* =========================================
    UTILITIES
 ========================================= */
-.glass,
-.about-glass-container,
-.timeline-content.glass-card,
-.contact-card {
-  background-color: var(--body); /* Fallback for older browsers */
+.glass, .about-glass-container, .timeline-content.glass-card, .contact-card {
+  background-color: var(--body);
   background-color: color-mix(in srgb, var(--body) 70%, transparent);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -123,11 +105,12 @@ body {
 /* =========================================
    TYPOGRAPHY & COMMON COMPONENTS
 ========================================= */
-h1, h2, h3, h4, h5, h6, p, li, a {
-  font-family: "Urbanist", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
 }
 
 p, li, a {
+  font-family: "Urbanist", sans-serif;
   font-size: 1.36rem;
   letter-spacing: 0.08rem;
   font-weight: 600;
@@ -140,7 +123,7 @@ p, li, a {
   font-size: 3.2rem;
   color: var(--font-color);
   text-transform: uppercase;
-  font-weight: 800; /* Adjusted for Urbanist */
+  font-weight: 800;
   font-style: normal;
   letter-spacing: 2px;
 }
@@ -265,7 +248,7 @@ p, li, a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--body); /* Fallback */
+  background-color: var(--body);
   background-color: color-mix(in srgb, var(--body) 70%, transparent);
   backdrop-filter: blur(12px);
   z-index: var(--z-navbar);
@@ -285,6 +268,7 @@ p, li, a {
 }
 
 .portfolio-logo {
+  font-family: "Outfit", sans-serif;
   font-size: 3.2rem;
   font-weight: 800;
   color: var(--font-color);
@@ -408,7 +392,7 @@ nav li a.active-link::after {
 .container-main {
   width: 96%;
   max-width: 1400px;
-  min-height: 100dvh; /* Updated to 100dvh */
+  min-height: 100dvh;
   margin: 0 auto;
   padding: 1.6rem 1.6rem;
   display: flex;
@@ -455,8 +439,7 @@ nav li a.active-link::after {
   align-items: center;
 }
 
-.main-contact-btn,
-.secondary-btn {
+.main-contact-btn, .secondary-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
@@ -485,16 +468,14 @@ nav li a.active-link::after {
   color: var(--font-color);
 }
 
-.main-contact-btn:hover,
-.secondary-btn:hover {
+.main-contact-btn:hover, .secondary-btn:hover {
   background-color: var(--font-color);
   color: var(--body);
   transform: translateY(-3px);
   box-shadow: var(--b-shadow-main-color-hover);
 }
 
-.main-contact-btn::after,
-.secondary-btn::after {
+.main-contact-btn::after, .secondary-btn::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -506,8 +487,7 @@ nav li a.active-link::after {
   z-index: -1;
 }
 
-.main-contact-btn:hover::after,
-.secondary-btn:hover::after {
+.main-contact-btn:hover::after, .secondary-btn:hover::after {
   height: 100%;
 }
 
@@ -600,8 +580,7 @@ nav li a.active-link::after {
   z-index: 1;
 }
 
-.about-name,
-.about-role {
+.about-name, .about-role {
   position: absolute;
   opacity: 1;
   filter: blur(1px);
@@ -630,7 +609,6 @@ nav li a.active-link::after {
   color: var(--font-color);
   font-size: 5vw;
   line-height: 2;
-  /* will-change removed for performance */
 }
 
 .about-glass-container {
@@ -961,7 +939,6 @@ nav li a.active-link::after {
   background: #0d1928;
   border: 1px solid rgba(255, 255, 255, 0.06);
   transform-style: preserve-3d;
-  /* Specified transitions instead of 'all' */
   transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s ease, transform 0.4s ease;
 }
 
@@ -972,7 +949,7 @@ nav li a.active-link::after {
 .project-card:hover {
   flex: 1.6 1 0%;
   box-shadow: 0 30px 80px rgba(0, 100, 255, 0.25), 0 0 0 1px rgba(0, 128, 255, 0.3);
-  will-change: transform; /* Moved to hover state for performance */
+  will-change: transform; 
 }
 
 .project-browser {
@@ -1015,14 +992,14 @@ nav li a.active-link::after {
 .project-card img {
   width: 100%;
   display: block;
-  filter: brightness(1) saturate(1); /* FIX: Image Clear Now */
+  filter: brightness(1) saturate(1); 
   transition: transform 7s ease, filter 0.5s ease;
   transform: translateY(0);
 }
 
 .project-card:hover img {
   transform: translateY(-42%);
-  filter: brightness(0.6) saturate(1); /* Slight dim on hover for text contrast */
+  filter: brightness(0.6) saturate(1); 
 }
 
 .project-overlay {
@@ -1503,7 +1480,7 @@ nav li a.active-link::after {
     flex-direction: column;
     position: absolute;
     right: 0.2rem;
-    top: 7rem;
+    top: 8.5rem;
     margin-right: 0;
     padding: 0;
   }
@@ -2097,7 +2074,7 @@ nav li a.active-link::after {
 
   .portfolio-logo {
     font-size: 3rem;
-    font-weight: 800; /* Adjusted */
+    font-weight: 800;
   }
 
   #toggle_button {
@@ -2124,7 +2101,7 @@ nav li a.active-link::after {
 
   .container-main {
     height: auto;
-    min-height: 100dvh; /* Updated to 100dvh */
+    min-height: 100dvh;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
