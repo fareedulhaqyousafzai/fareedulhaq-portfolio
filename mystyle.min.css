@@ -1,5 +1,7 @@
 /* =========================================
-   ROOT VARIABLES (Dark Mode Default)
+   1. ROOT VARIABLES (Dark Mode Default)
+   - Defines all the main color palettes, shadows, and z-indexes.
+   - Includes default dark mode colors and specific brand colors (HTML, CSS, JS, etc.).
 ========================================= */
 :root {
 
@@ -39,14 +41,16 @@
   --z-navbar: 111;
 }
 
-
+/* Light mode overrides */
 body.light-mode {
   --body: var(--white);
   --font-color: #1c354f;
   --color-github: #181717; }
 
 /* =========================================
-   BASE & RESETS
+   2. BASE & RESETS
+   - Global resets (margin/padding 0, box-sizing).
+   - Global font families, default body behaviors, and custom scrollbar styling.
 ========================================= */
 * {
   margin: 0;
@@ -58,9 +62,9 @@ body.light-mode {
   user-select: auto;
 }
 
+/* Preventing text selection on UI elements */
 img,
-i,
-nav,
+i, a,
 button,
 .main-contact-btn,
 .secondary-btn,
@@ -69,7 +73,8 @@ button,
 .slider-dot,
 .scroll-top,
 .theme-switch,
-#toggle_button {
+#toggle_button,
+.portfolio-logo,.logo-dot  {
   user-select: none;
 }
 
@@ -106,7 +111,8 @@ body {
 }
 
 /* =========================================
-   UTILITIES
+   3. UTILITIES
+   - Reusable helper classes (e.g., Glassmorphism effect used across sections).
 ========================================= */
 .glass,
 .about-glass-container,
@@ -120,7 +126,8 @@ body {
 }
 
 /* =========================================
-   TYPOGRAPHY & COMMON COMPONENTS
+   4. TYPOGRAPHY & COMMON COMPONENTS
+   - Shared text components like main headings, subheadings, and section dividers.
 ========================================= */
 h1, h2, h3, h4, h5, h6, p, li, a {
   font-family: "Urbanist", sans-serif;
@@ -152,7 +159,9 @@ p, li, a {
 }
 
 /* =========================================
-   PREMIUM LOADER
+   5. PREMIUM LOADER
+   - Styling and layout for the initial page loading screen.
+   - Includes the logo animation, progress bar, and expanding rings.
 ========================================= */
 .loader-overlay {
   position: fixed;
@@ -254,7 +263,9 @@ p, li, a {
 }
 
 /* =========================================
-   HEADER & NAVBAR
+   6. HEADER & NAVBAR
+   - Top navigation bar layout, logo hover effects.
+   - Contains the theme switch (Light/Dark mode toggle).
 ========================================= */
 .container-nav {
   width: 96%;
@@ -264,7 +275,7 @@ p, li, a {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--body); /* Fallback */
+  background-color: var(--body);
   background-color: color-mix(in srgb, var(--body) 70%, transparent);
   backdrop-filter: blur(12px);
   z-index: var(--z-navbar);
@@ -402,7 +413,9 @@ nav li a.active-link::after {
 }
 
 /* =========================================
-   HERO / MAIN SECTION
+   7. HERO / MAIN SECTION
+   - Landing page structure (Text on left, Image on right).
+   - Contains CTA (Call To Action) buttons and the animated hero image blob.
 ========================================= */
 .container-main {
   width: 96%;
@@ -587,7 +600,9 @@ nav li a.active-link::after {
 }
 
 /* =========================================
-   ABOUT SECTION
+   8. ABOUT SECTION
+   - Bio text container with glassmorphism design.
+   - Includes the large background text effect (.about-name, .about-role).
 ========================================= */
 .about-section {
   width: 100%;
@@ -667,7 +682,9 @@ nav li a.active-link::after {
 }
 
 /* =========================================
-   EDUCATION & CERTIFICATIONS SECTION
+   9. EDUCATION & CERTIFICATIONS SECTION
+   - Vertical timeline view.
+   - Styles the connecting lines, icons, and information cards for history.
 ========================================= */
 .education-section {
   width: 100%;
@@ -774,7 +791,9 @@ nav li a.active-link::after {
 }
 
 /* =========================================
-   SKILLS SECTION
+   10. SKILLS SECTION
+   - Features custom circle cards for tech stack (HTML, CSS, JS, etc.).
+   - Contains 3D rotating animations (rotateY) on hover.
 ========================================= */
 .skillset-section {
   width: 100%;
@@ -887,7 +906,6 @@ nav li a.active-link::after {
 .git { color: var(--color-git); }
 .github { color: var(--color-github); }
 
-/* Skills Hover Effects */
 .title-card:hover {
   transform: translateY(-10px) scale(1.005) translateZ(0);
 }
@@ -928,7 +946,10 @@ nav li a.active-link::after {
 .light-mode .title-card:hover #github-circle { background-color: var(--color-github); }
 
 /* =========================================
-   PROJECTS SECTION
+   11. PROJECTS SECTION
+   - Layout for portfolio portfolio projects.
+   - Hovering triggers expansion (flex flex-grow) and reveals overlays with links/tags.
+   - Includes custom browser window bar design on cards.
 ========================================= */
 .projects-section {
   padding: 0.8rem 20px 80px;
@@ -1183,7 +1204,9 @@ nav li a.active-link::after {
 }
 
 /* =========================================
-   CONTACT SECTION
+   12. CONTACT SECTION
+   - Layout for contact blocks (LinkedIn, GitHub, Email, WhatsApp).
+   - Brand specific colors apply on hover.
 ========================================= */
 .contact-section {
   padding: 12rem 8%;
@@ -1278,7 +1301,9 @@ nav li a.active-link::after {
 }
 
 /* =========================================
-   FOOTER SECTION
+   13. FOOTER SECTION
+   - Bottom area styling and copyright info.
+   - Contains the floating scroll-to-top button.
 ========================================= */
 .footer-section {
   padding: 3.2rem 2% 1.6rem 2%;
@@ -1383,7 +1408,9 @@ nav li a.active-link::after {
 }
 
 /* =========================================
-   UTILITY & ANIMATIONS
+   14. UTILITY & ANIMATIONS
+   - Keyframes for all CSS animations used throughout the page.
+   - E.g., pulsing buttons, floating blobs, loader animations.
 ========================================= */
 @keyframes floatingBlob {
   0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
@@ -1445,9 +1472,14 @@ nav li a.active-link::after {
 }
 
 /* ======================================================= */
-/* ALL MOBILE MEDIA QUERIES COMBINED (max-width: 768px)    */
+/* 15. ALL PORTRAIT MOBILE MEDIA QUERIES COMBINED (max-width: 768px)
+   - Modifies layout, font-sizes, and structure for vertical phone screens.
 /* ======================================================= */
 @media (max-width: 768px) {
+  /* =========================================
+   15.1 BASE, RESETS & LOADER FOR MOBILE
+   - Shrinks global font size, loader rings, and dot gaps.
+========================================= */
   html {
     font-size: 45%;
   }
@@ -1487,6 +1519,11 @@ nav li a.active-link::after {
     margin-left: -110px;
   }
 
+/* =========================================
+   15.2 HEADER & NAVBAR FOR MOBILE
+   - Implements the hidden/toggleable hamburger menu logic.
+   - Positions nav links vertically on tap.
+========================================= */
   .container-nav {
     width: 90%;
     left: 0;
@@ -1559,6 +1596,11 @@ nav li a.active-link::after {
     pointer-events: none;
   }
 
+/* =========================================
+   15.3 MAIN/HERO SECTION FOR MOBILE
+   - Stacks image on top, text underneath (column-reverse).
+   - Centers alignments and resizes buttons.
+========================================= */
   .container-main {
     flex-direction: column-reverse;
     justify-content: center;
@@ -1626,6 +1668,11 @@ nav li a.active-link::after {
     height: 60px;
   }
 
+/* =========================================
+   15.4 ABOUT SECTION FOR MOBILE
+   - Adjusts font sizing for the large background text.
+   - Adjusts padding for the glass container.
+========================================= */
   .about-glass-container {
     padding: 5rem 2rem 10rem;
     width: 90%;
@@ -1658,6 +1705,10 @@ nav li a.active-link::after {
     z-index: 2;
   }
 
+/* =========================================
+   15.5 EDUCATION/TIMELINE FOR MOBILE
+   - Decreases left padding and centers the timeline elements slightly.
+========================================= */
   .education-section {
     padding: 20rem 4rem;
   }
@@ -1704,6 +1755,10 @@ nav li a.active-link::after {
     font-size: 1.05rem;
   }
 
+/* =========================================
+   15.6 SKILLS SECTION FOR MOBILE
+   - Changes flex widths so icons stack properly in two columns or adapt.
+========================================= */
   .skillset-section {
     padding-top: 15rem;
   }
@@ -1723,6 +1778,11 @@ nav li a.active-link::after {
     align-items: center;
   }
 
+/* =========================================
+   15.7 PROJECTS SECTION FOR MOBILE
+   - Implements a horizontal scrolling behavior for project cards (scroll-snap).
+   - Shows slider buttons and navigation dots.
+========================================= */
   .projects-section {
     margin-top: 12rem;
   }
@@ -1930,6 +1990,10 @@ nav li a.active-link::after {
     box-shadow: 0 0 12px color-mix(in srgb, var(--main-color) 40%, transparent);
   }
 
+/* =========================================
+   15.8 CONTACT SECTION FOR MOBILE
+   - Shorter widths and text adjustments for social cards.
+========================================= */
   .contact-section {
     padding: 10rem 5%;
   }
@@ -1966,6 +2030,10 @@ nav li a.active-link::after {
     word-wrap: break-word;
   }
 
+/* =========================================
+   15.9 FOOTER SECTION FOR MOBILE
+   - Centers footer text, scales back font sizes.
+========================================= */
   .footer-section {
     padding: 4rem 5% 2rem;
     margin-top: 4rem;
@@ -1998,11 +2066,16 @@ nav li a.active-link::after {
 }
 
 /* ======================================================= */
-/* MOBILE LANDSCAPE MODE                                   */
+/* 16. MOBILE LANDSCAPE MODE (max-width: 1000px, max-height: 600px)
+   - Tweak adjustments explicitly for phones tilted sideways.
+   - Adjusts font sizing, heights, and flex-directions to fit smaller height viewports.
 /* ======================================================= */
 
 @media (max-width: 1000px) and (max-height: 600px) and (orientation: landscape) {
 
+/* =========================================
+   16.1 BASE, RESETS & LOADER FOR LANDSCAPE
+========================================= */
   html {
     font-size: 45%;
   }
@@ -2042,6 +2115,10 @@ nav li a.active-link::after {
     margin-left: -85px;
   }
 
+/* =========================================
+   16.2 HEADER & NAVBAR FOR LANDSCAPE
+   - Nav items are squished slightly, drop-down applies instead of top-bar to save space.
+========================================= */
   .container-nav {
     width: 90%;
     left: 0;
@@ -2120,6 +2197,10 @@ nav li a.active-link::after {
     pointer-events: none;
   }
 
+/* =========================================
+   16.3 MAIN/HERO SECTION FOR LANDSCAPE
+   - Elements are side-by-side again (row format), image is reduced in size to fit horizontal space.
+========================================= */
   .container-main {
     height: auto;
     min-height: 100dvh; 
@@ -2172,6 +2253,10 @@ nav li a.active-link::after {
     margin-bottom: 1rem;
   }
 
+/* =========================================
+   16.4 ABOUT SECTION FOR LANDSCAPE
+   - Minimizes margins/padding to save vertical space.
+========================================= */
   .about-section {
     padding: 10rem 2rem 2rem 2rem;
     min-height: auto;
@@ -2210,6 +2295,9 @@ nav li a.active-link::after {
     margin-bottom: 0.5rem;
   }
 
+/* =========================================
+   16.5 EDUCATION/TIMELINE FOR LANDSCAPE
+========================================= */
   .education-section {
     padding: 10rem 2rem 2rem 2rem;
   }
@@ -2264,6 +2352,10 @@ nav li a.active-link::after {
     font-size: 1rem;
   }
 
+/* =========================================
+   16.6 SKILLS SECTION FOR LANDSCAPE
+   - Shrinks tech bubbles so more fit in horizontal view.
+========================================= */
   .skillset-section {
     padding-top: 9rem;
   }
@@ -2331,6 +2423,10 @@ nav li a.active-link::after {
     font-size: 1.2rem;
   }
 
+/* =========================================
+   16.7 PROJECTS SECTION FOR LANDSCAPE
+   - Scales project cards heavily for visibility on wide/short screens.
+========================================= */
   .projects-section {
     margin-top: 1rem;
     padding-top: 9rem;
@@ -2488,6 +2584,9 @@ nav li a.active-link::after {
     display: none;
   }
 
+/* =========================================
+   16.8 CONTACT SECTION FOR LANDSCAPE
+========================================= */
   .contact-section {
     padding: 6rem 5% 2rem 5%;
   }
@@ -2517,6 +2616,9 @@ nav li a.active-link::after {
     font-size: 0.9rem;
   }
 
+/* =========================================
+   16.9 FOOTER SECTION FOR LANDSCAPE
+========================================= */
   .footer-section {
     padding: 4rem 5% 2rem 5%;
     margin-top: 4rem;
