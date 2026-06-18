@@ -1608,7 +1608,10 @@ nav li a.active-link::after {
     width: 85%;
     height: auto;
   }
-
+  .img-glow-bg {
+    filter: drop-shadow(0 0 45px rgba(16, 149, 213, 0.9)); 
+    transform: scale(1.08); 
+  }
   .hero-btn-group {
     display: flex;
     justify-content: center;
