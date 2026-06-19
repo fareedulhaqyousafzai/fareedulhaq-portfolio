@@ -1610,7 +1610,7 @@ nav li a.active-link::after {
   }
   .img-glow-bg {
     filter: drop-shadow(0 0 45px rgba(16, 149, 213, 0.9)); 
-    transform: scale(1.08); 
+    transform: scale(1.2); 
   }
   .hero-btn-group {
     display: flex;
