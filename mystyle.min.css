@@ -13,13 +13,16 @@
   --dark-color: #1c354f;
   --font-color: var(--white);
 
+ 
   --b-shadow-main-color: 0px 5px 15px rgba(16, 149, 213, 0.4);
   --b-shadow-main-color-hover: 0px 5px 15px rgba(16, 149, 213, 0.7);
   --b-shadow-black-color: 0 4px 15px rgba(0, 0, 0, 0.3);
+  
 
   --browser-bar: #2d2d2d;
   --browser-border: #2d2d2d;
 
+  
   --color-html: #e34f26;
   --color-html-hover: #f16529;
   --color-css: #1572b6;
@@ -31,15 +34,16 @@
   --color-git: #f05032;
   --color-github: #ffffff;
 
+
   --z-loader: 999;
   --z-navbar: 111;
 }
 
+
 body.light-mode {
   --body: var(--white);
   --font-color: #1c354f;
-  --color-github: #181717;
-}
+  --color-github: #181717; }
 
 /* =========================================
            BASE & RESETS
@@ -82,7 +86,6 @@ html {
 body {
   transition: background-color 0.5s ease, color 0.5s ease;
   background-color: var(--body);
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -143,7 +146,6 @@ p, li, a {
 
 .header-divider {
   width: 40rem;
-  max-width: 80%;
   height: 3px;
   background-color: var(--main-color);
   margin: 1.6rem auto 8rem auto;
@@ -450,7 +452,6 @@ nav li a.active-link::after {
   gap: 1.6rem;
   margin-top: 1.6rem;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .main-contact-btn,
@@ -533,7 +534,6 @@ nav li a.active-link::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
 }
 
 .img-glow-bg {
@@ -597,7 +597,6 @@ nav li a.active-link::after {
   justify-content: center;
   position: relative;
   z-index: 1;
-  overflow: hidden;
 }
 
 .about-name,
@@ -628,8 +627,9 @@ nav li a.active-link::after {
 .about-role {
   top: 40rem;
   color: var(--font-color);
-  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-size: 5vw;
   line-height: 2;
+  
 }
 
 .about-glass-container {
@@ -1441,217 +1441,6 @@ nav li a.active-link::after {
 
 .pulsing-btn:hover {
   animation: none;
-}
-
-/* ======================================================= */
-/*  17. LAPTOP (1024px - 1279px)
-/* ======================================================= */
-@media (max-width: 1279px) {
-  .container-main {
-    gap: 6rem;
-  }
-
-  .heading {
-    font-size: 5.6rem;
-  }
-
-  .subheading {
-    font-size: 4rem;
-  }
-
-  .hero-img-container {
-    width: 280px;
-    height: 280px;
-  }
-
-  .about-glass-container {
-    padding: 7rem 3rem;
-  }
-
-  .timeline-container {
-    max-width: 760px;
-  }
-}
-
-/* ======================================================= */
-/*  18. TABLET (768px - 1023px)
-/* ======================================================= */
-@media (max-width: 1023px) {
-  html {
-    font-size: 56%;
-  }
-
-  .container-nav {
-    width: 92%;
-    padding: 0.8rem 2rem;
-  }
-
-  nav ul {
-    gap: 2.4rem;
-  }
-
-  nav li a {
-    font-size: 1.3rem;
-  }
-
-  .container-main {
-    flex-direction: column-reverse;
-    justify-content: center;
-    text-align: center;
-    gap: 4rem;
-    padding-top: 4rem;
-    min-height: 100vh;
-    padding-bottom: 6rem;
-  }
-
-  .content-section {
-    width: 100%;
-  }
-
-  .hero-btn-group {
-    justify-content: center;
-  }
-
-  .hero-img-container {
-    width: 240px;
-    height: 240px;
-    margin-top: 2rem;
-  }
-  .about-section{
-    padding-top: 50rem;
-  }
-
-  .about-glass-container {
-    width: 92%;
-    padding: 6rem 3rem;
-  }
-
-  .about-name {
-    top: 70rem;
-    font-size: clamp(4rem, 9vw, 6rem);
-  }
-
-  .about-role {
-    top: 80rem;
-  }
-
-  .timeline-container {
-    max-width: 600px;
-  }
-
-  .container-skillset {
-    margin-top: -4rem;
-  }
-
-  .skill {
-    width: 33.33%;
-  }
-
-  .projects-grid {
-    flex-wrap: wrap;
-    width: 92%;
-  }
-
-  .project-card {
-    flex: 1 1 calc(50% - 1.2rem);
-    min-width: 280px;
-  }
-
-  .projects-grid:not(:hover) .project-card:nth-child(2) {
-    flex: 1 1 calc(50% - 1.2rem);
-  }
-
-  .project-card:hover {
-    flex: 1 1 calc(50% - 1.2rem);
-  }
-
-  .contact-container {
-    max-width: 700px;
-  }
-}
-
-/* ======================================================= */
-/*  19. SMALL MOBILE (max-width: 479px)
-/* ======================================================= */
-@media (max-width: 479px) {
-  html {
-    font-size: 40%;
-  }
-
-  .container-nav {
-    width: 94%;
-    padding: 0 2.4rem;
-  }
-
-  .heading {
-    font-size: 2.6rem;
-  }
-
-  .subheading {
-    font-size: 1.9rem;
-  }
-
-  .hero-img-container {
-    width: 160px;
-    height: 160px;
-  }
-
-  .main-contact-btn,
-  .secondary-btn {
-    padding: 1.3rem 2rem;
-    font-size: 1.15rem;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .hero-btn-group {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .about-glass-container {
-    padding: 4rem 1.6rem 8rem;
-    width: 94%;
-  }
-
-  .about-glass-container .main-heading {
-    font-size: 3.4rem;
-  }
-
-  .about-name {
-    font-size: 2.6rem;
-  }
-
-  .about-role {
-    font-size: 2.1rem;
-  }
-
-  .education-section {
-    padding: 18rem 2.4rem;
-  }
-
-  .timeline-item {
-    padding-left: 4.6rem;
-  }
-
-  .timeline-icon {
-    width: 3.8rem;
-    height: 3.8rem;
-    font-size: 1.5rem;
-  }
-
-  .skill {
-    width: 50%;
-  }
-
-  .contact-card {
-    width: 120px;
-    height: 64px;
-  }
-
-  .footer-para {
-    font-size: 1.15rem;
-  }
 }
 
 /* ======================================================= */
